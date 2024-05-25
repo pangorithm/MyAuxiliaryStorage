@@ -1,0 +1,186 @@
+{
+  "main": {
+    "id": "9917ddd3f1d117b5",
+    "type": "split",
+    "children": [
+      {
+        "id": "1d6c4147d6c2a6e9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "78d65c899618d8a2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "pangorithm's obsidian.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d421b20f8be752ea",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "pangorithm's obsidian.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "b923f2d0e940d009",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "13ba496fcfd2b061",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d0fa7bb2962c4a3d",
+    "type": "split",
+    "children": [
+      {
+        "id": "a4a7bcdada153bbb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1e9257449eee0f83",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "85fe1c2024218234",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "eebd2da5e6f3f454",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "781fbbd975663b45",
+    "type": "split",
+    "children": [
+      {
+        "id": "ffdfa07a8df947a0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "907ea7e542c2cca5",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "33e63ae14f2bb4ea",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "8b592dc17b1a550f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "39df447e07d6d402",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false
+    }
+  },
+  "active": "13ba496fcfd2b061",
+  "lastOpenFiles": [
+    "mariaDB/mariaDB.md",
+    "pangorithm's obsidian.md",
+    "javaScript&typeScript/decorator.md",
+    "create a link.md",
+    "javaScript&typeScript/JS&TS.md",
+    "javaScript&typeScript/nestJS/nestJS.md",
+    "markdown/markdown.md",
+    "javaScript&typeScript",
+    "PM2/PM2.md",
+    "무제 파일.canvas",
+    "무제 파일 1.canvas"
+  ]
+}
