@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "78d65c899618d8a2",
+            "id": "de4d165f015f1a86",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,12 +20,24 @@
             }
           },
           {
-            "id": "d421b20f8be752ea",
+            "id": "ab1795ee700f7eea",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pangorithm's obsidian.md",
+                "file": "nginx/nginx.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6e187fdc98041e5d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "haproxy/haproxy.md",
                 "mode": "source",
                 "source": false
               }
@@ -35,11 +47,11 @@
         "currentTab": 1
       },
       {
-        "id": "b923f2d0e940d009",
+        "id": "1406efcf79dbde77",
         "type": "tabs",
         "children": [
           {
-            "id": "13ba496fcfd2b061",
+            "id": "a7acd47e7088b04d",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -112,6 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "nginx/nginx.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -128,6 +141,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "nginx/nginx.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +163,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "nginx/nginx.md"
+              }
             }
           }
         ]
@@ -169,10 +185,14 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "13ba496fcfd2b061",
+  "active": "ab1795ee700f7eea",
   "lastOpenFiles": [
-    "mariaDB/mariaDB.md",
     "pangorithm's obsidian.md",
+    "haproxy/haproxy.md",
+    "nginx/nginx.md",
+    "haproxy",
+    "nginx",
+    "mariaDB/mariaDB.md",
     "javaScript&typeScript/decorator.md",
     "create a link.md",
     "javaScript&typeScript/JS&TS.md",
