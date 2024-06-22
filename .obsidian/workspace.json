@@ -18,6 +18,14 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "0c50f8138bc451a8",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
           }
         ]
       }
@@ -148,22 +156,24 @@
   },
   "active": "ab1795ee700f7eea",
   "lastOpenFiles": [
+    "javaScript&typeScript/nestJS/nestJS.md",
     "README.md",
+    "haproxy/haproxy.md",
+    "PM2/PM2.md",
+    "javaScript&typeScript/decorator.md",
+    "javaScript&typeScript/JS&TS.md",
+    "mariaDB/replication.md",
+    "mariaDB/galera-cluster.md",
+    "mariaDB/mariaDB.md",
+    "markdown/markdown-cheat-sheet.md",
+    "markdown/markdown.md",
     "nginx/nginx.md",
     "nginx/command.md",
-    "haproxy/haproxy.md",
-    "markdown/markdown.md",
     "nginx/config.md",
-    "PM2/PM2.md",
-    "markdown/markdown-cheat-sheet.md",
     "pangorithm's obsidian.md",
     "haproxy",
     "nginx",
-    "mariaDB/mariaDB.md",
-    "javaScript&typeScript/decorator.md",
     "create a link.md",
-    "javaScript&typeScript/JS&TS.md",
-    "javaScript&typeScript/nestJS/nestJS.md",
     "javaScript&typeScript",
     "무제 파일.canvas",
     "무제 파일 1.canvas"
