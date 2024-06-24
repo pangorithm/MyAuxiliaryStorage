@@ -3,6 +3,7 @@
 ### 상태 정보 재설정
 
 1. 동작 중 수행  
+
 ```bash
 # bash 명령어로 수행
 mysqladmin flush-all-statistics
@@ -13,6 +14,7 @@ mysqladmin status
 FLUSH STATUS;
 ```  
 2. 설정파일 수정 후 MariaDB 인스턴스 재시작  
+
 ```bash
 # 설정파일 수정
 vi /etc/my.cnf # 또는 아래 명령
