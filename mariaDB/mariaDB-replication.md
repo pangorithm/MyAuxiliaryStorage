@@ -41,8 +41,7 @@ show master status; # 마스터 노드의 상태 확인
 
 ### 슬레이브 생성
 
-1. mysqldump : 전통적인 방식. 덤프하는 동안 데이터 베이스의 크기와 테이블 잠금에 의해 아주 긴 시간이 걸릴 수 있다.
-전체를 덤프하는 동안 테이블을 잠가야 한다.
+1. mysqldump : 전통적인 방식. 덤프하는 동안 데이터 베이스의 크기와 테이블 잠금에 의해 아주 긴 시간이 걸릴 수 있다. 전체를 덤프하는 동안 테이블을 잠가야 한다.  
 ```sql
 flush tables with read lock; # 모든 테이블을 닫고 최신 데이터를 동기화하고 쓰기 작업을 막는다.
 ```
@@ -50,26 +49,26 @@ flush tables with read lock; # 모든 테이블을 닫고 최신 데이터를 �
 ```bash
 mysqldump -uroot -p --opt --routiness --triggers --events --single-transaction --master-data=2 -A > 생성파일명.sql
 ```
-> --opt : 백업 속도와 복원 속도를 최적화 하기 위한 아래 옵션들의 묶음 옵션이다.
-	--add-locks : 복원 시 빠른 삽입
-	--create-options : create 문의 모든 mariaDB 옵션을 추가한다.
-	--disable-keys : 임포트 이후 인덱스를 생성하게 하여 덤프 복원 속도를 높여준다
-	--extended-insert : 다중 열 삽입을 사용한다.
-	--lock-tables : 덤프하기 전에 테이블을 잠근다.
-	--quick : 테이블 데이터를 한 줄씩 읽어 메모리 사용량을 줄인다.
-	--set-charset : 덤프에 문자셋을 추가한다.
+> --opt : 백업 속도와 복원 속도를 최적화 하기 위한 아래 옵션들의 묶음 옵션이다.  
+	--add-locks : 복원 시 빠른 삽입  
+	--create-options : create 문의 모든 mariaDB 옵션을 추가한다.  
+	--disable-keys : 임포트 이후 인덱스를 생성하게 하여 덤프 복원 속도를 높여준다  
+	--extended-insert : 다중 열 삽입을 사용한다.  
+	--lock-tables : 덤프하기 전에 테이블을 잠근다.  
+	--quick : 테이블 데이터를 한 줄씩 읽어 메모리 사용량을 줄인다.  
+	--set-charset : 덤프에 문자셋을 추가한다.  
 
---routines : 저장 프로시저와 함수를 포함하여 백업합니다.
---triggers : 덤프에 트리거를 추가한다.
---events : mysql.event 테이블도 덤프한다.
---single-transaction: InnoDB를 위한 일관적인 상태를 유지한다. 읽기가 잠긴 테이블은 플러시하지 않기 위해 InnoDB/XtraDB 상태에서만 사용한다.
---master-data : 1은 import된 서버에 'change master to' 명령문을 수행하고, 2는 덤프에 binlog 파일과 위치 정보를 코멘트로 추가한다.
--A : 모든 DB를 덤프한다.
+--routines : 저장 프로시저와 함수를 포함하여 백업합니다.  
+--triggers : 덤프에 트리거를 추가한다.  
+--events : mysql.event 테이블도 덤프한다.  
+--single-transaction: InnoDB를 위한 일관적인 상태를 유지한다. 읽기가 잠긴 테이블은 플러시하지 않기 위해 InnoDB/XtraDB 상태에서만 사용한다.  
+--master-data : 1은 import된 서버에 'change master to' 명령문을 수행하고, 2는 덤프에 binlog 파일과 위치 정보를 코멘트로 추가한다.  
+-A : 모든 DB를 덤프한다.  
 
 ```sql
 unlock tables; # 위의 mysqldump 실행 후 테이블 잠금을 해제한다.
 ```
-
+  
 ```bash
 mysql -uroot -p < 생성파일명.sql # 복원 명령
 
@@ -77,10 +76,10 @@ mysql -uroot -p < 생성파일명.sql # 복원 명령
 grep -m 1"^-- CHANGE MASTER" 생성파일명.sql 
 ```
 
-2. Xtrabackup :  아주 짦은 시간동안 테이블을 잠그고 덤프를 빠르게 생성하여 압축된 DB를 전송한다.
-Xtrabackup을 사용하기 위해서는 마스터와 슬레이브 서버 모두에 Xtrabackup을 설치해야 한다.
+2. Xtrabackup :  아주 짦은 시간동안 테이블을 잠그고 덤프를 빠르게 생성하여 압축된 DB를 전송한다.  
+Xtrabackup을 사용하기 위해서는 마스터와 슬레이브 서버 모두에 Xtrabackup을 설치해야 한다.  
 
-다음은 Xtrabackup 을 진행하는 과정이다
+다음은 Xtrabackup 을 진행하는 과정이다  
 ```bash
 슬레이브> systemctl stop mysql # 디비 인스턴스 정지
 슬레이브> systemctl status mysql # 디비 정지상태 확인
@@ -105,14 +104,16 @@ show slave status; # 슬레이브 상태 확인
 ```
 
 
-### GTID 복제
-Global ID를 사용하여 모든 노드에서 동일한 트랜잭션 ID를 얻어 쉽게 마스터를 변경할 수 있다.
-GTID 형식: [도메인ID]-[서버ID]-[숫자] 
-GTID 복제를 활성화 하기 위해서는 기존 replication 설정에 'gtid_strict_mode'를 (마스터와 슬레이브 모두) 활성화 시키면 된다.
-`select @@global.gtid_strict_mode;` : GTID 복제 활성화 상태를 조회할 수 있다.
-`select @@global.gtid_current_pos;` : GTID 포지션 확인
+### GTID 복제  
 
-GTID 슬레이브 시작
+Global ID를 사용하여 모든 노드에서 동일한 트랜잭션 ID를 얻어 쉽게 마스터를 변경할 수 있다.  
+GTID 형식: [도메인ID]-[서버ID]-[숫자]  
+GTID 복제를 활성화 하기 위해서는 기존 replication 설정에 'gtid_strict_mode'를 (마스터와 슬레이브 모두) 활성화 시키면 된다.  
+`select @@global.gtid_strict_mode;` : GTID 복제 활성화 상태를 조회할 수 있다.  
+`select @@global.gtid_current_pos;` : GTID 포지션 확인  
+
+GTID 슬레이브 시작  
+
 ```sql
 stop slave;
 reset slave;
@@ -122,12 +123,12 @@ start slave;
 
 select @@gtid_slave_pos; # 슬레이브의 gtid 포지션 확인인
 
-show slave status; # 슬레이브 상태 확인, 전통 방식과 같은 명령어지만 더 다양한 값이 조회된다.
+show slave status; # 슬레이브 상태 확인, 전통 방식과 같은 명령어지만 더 다양한 값이 조회된다.  
 ```
-[master_use_gtid](https://mariadb.com/kb/en/change-master-to/#master_use_gtid) : 세가지 파라미터가 사용 가능하다.
-* slave_pos: 슬레이브는 자체적으로 유지하는 마지막 GTID 위치에서 복제를 시작한다. 슬레이브 노드를 위한 안전한 방법이다.
-* current_pos: 슬레이브는 가장 최근의 GTID 위치에서 복제를 시작한다. 이는 현재 마스터의 복제 상태와 직접 동기화. gtid_strict_mode 사용 시 슬레이브 서버의 빈로그에 추가적인 트랜잭션이 삽입될 수도 있다.
-* no: GTID를 비활성화
+[master_use_gtid](https://mariadb.com/kb/en/change-master-to/#master_use_gtid) : 세가지 파라미터가 사용 가능하다.  
+* slave_pos: 슬레이브는 자체적으로 유지하는 마지막 GTID 위치에서 복제를 시작한다. 슬레이브 노드를 위한 안전한 방법이다.  
+* current_pos: 슬레이브는 가장 최근의 GTID 위치에서 복제를 시작한다. 이는 현재 마스터의 복제 상태와 직접 동기화. gtid_strict_mode 사용 시 슬레이브 서버의 빈로그에 추가적인  트랜잭션이 삽입될 수도 있다.  
+* no: GTID를 비활성화  
 
 ### 일반 복제에서 GTID 복제 방식으로의 이전
 ```sql
@@ -140,26 +141,27 @@ start slave;
 show slave status; # 변환 여부 확인
 ```
 
-### 병렬 복제
-기본적으로 복제는 단일 스레드로 동작하지만 병력 복제를 활성화 시키면 최대 10배까지 빨라질 수 있다.
+### 병렬 복제  
+기본적으로 복제는 단일 스레드로 동작하지만 병력 복제를 활성화 시키면 최대 10배까지 빨라질 수 있다.  
 
-<설정파일 필수옵션>
-slave-parallel-threads=복제시 사용하는 스레드 수(0 비활성화 ~ 16383 최대) 너무 크게 잡으면 오히려 성능 저하가 발생할 수 있다.
+<설정파일 필수옵션>  
+slave-parallel-threads=복제시 사용하는 스레드 수(0 비활성화 ~ 16383 최대) 너무 크게 잡으면 오히려 성능 저하가 발생할 수 있다.  
 
-<추가 옵션>
-slave_parallel_max_queued : SQL 스레드를 위한 메모리 제한 값
-slave_domain_parallel_threads : 마스터가 한번에 최대로 예약할 수 있는 연결의 수
-binlog_commit_wait_count : 바이너리 로그에서 I/O를 설정한다.(설정한 값 만큼의 commit 후 binlog 쓰기 작업을 시도한다.)
-binlog_commit_wait_usec : binlog를 작성하기전 대기하는 시간을 마이크로초 단위로 설정 해준다.
+<추가 옵션>  
+slave_parallel_max_queued : SQL 스레드를 위한 메모리 제한 값  
+slave_domain_parallel_threads : 마스터가 한번에 최대로 예약할 수 있는 연결의 수  
+binlog_commit_wait_count : 바이너리 로그에서 I/O를 설정한다.(설정한 값 만큼의 commit 후 binlog 쓰기 작업을 시도한다.)  
+binlog_commit_wait_usec : binlog를 작성하기전 대기하는 시간을 마이크로초 단위로 설정 해준다.  
 
 ### 로드벨런싱
-여러 레플리케이션 디비를 두고 로드벨런서를 통해 부하분산을 수행할 수 있다.
-이때에 haproxy 또는 proxySQL 등을 사용하여 설정할 수 있고 tcpdump 또는 `watch -n1 'netstat -auntpl | grep 3306'` 명령어를 통해 로드벨런싱이 정상적으로 작동하는지 확인할 수 있다.
+여러 레플리케이션 디비를 두고 로드벨런서를 통해 부하분산을 수행할 수 있다.  
+이때에 haproxy 또는 proxySQL 등을 사용하여 설정할 수 있고 tcpdump 또는 `watch -n1 'netstat -auntpl | grep 3306'` 명령어를 통해 로드벨런싱이 정상적으로 작동하는지 확인할 수 있다.  
 
 ### 에러처리
-복제에서 에러가 발생할 경우 SQL문을 실행할 수 없으므로 복제가 정지하게 된다.
+복제에서 에러가 발생할 경우 SQL문을 실행할 수 없으므로 복제가 정지하게 된다.  
 
-해결방법
+해결방법  
+
 ```sql
 show slave status\G # 슬레이브 상태 확인
 stop slave;
@@ -184,7 +186,8 @@ mysqlbinlog 빈로그파일명 # 이 명령어를 통해 빈로그 정보 확인
 
 
 ### GTID: 슬레이브를 마스터로 교체하고 복구하기
-1. 마스터 교체
+1. 마스터 교체  
+  
 ```sql
 # 슬레이브 디비
 set global read_only=0; # 구슬레이브가 쓰기 가능하도록 설정한다.
@@ -199,8 +202,8 @@ change master to master_host='신마스터ip', master_user='replication', master
 start slave;
 ```
 
-2. 이후 데이터가 손실되었던 이전의 마스터가 복제를 통해 데이터가 복구되었다.
-3. 신 마스터 디비를 정지시킨다.
-4. 복구가 완료된 구마스터 디비를 다시 마스터로 설정한다.
-5. `stop slave;` 다시 마스터가 되었으니 복제를 중지시킨다.
-6. 복구를 위해 사용했던 신 마스터를 다시 슬레이브로 시작한다.
+2. 이후 데이터가 손실되었던 이전의 마스터가 복제를 통해 데이터가 복구되었다.  
+3. 신 마스터 디비를 정지시킨다.  
+4. 복구가 완료된 구마스터 디비를 다시 마스터로 설정한다.  
+5. `stop slave;` 다시 마스터가 되었으니 복제를 중지시킨다.  
+6. 복구를 위해 사용했던 신 마스터를 다시 슬레이브로 시작한다.  
