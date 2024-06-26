@@ -13,8 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "mariaDB/WAN-slave.md",
                 "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c0210274fdcc68b6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mariaDB/Dual-master-replication&Multiple master slaves.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -25,6 +37,24 @@
             "state": {
               "type": "graph",
               "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "2c0320a203824852",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2486246bf71f8798",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mariaDB/Dual-master-replication&Multiple master slaves.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -93,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "mariaDB/Dual-master-replication&Multiple master slaves.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "mariaDB/Dual-master-replication&Multiple master slaves.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +163,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "mariaDB/Dual-master-replication&Multiple master slaves.md"
               }
             }
           }
@@ -154,15 +184,20 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "ab1795ee700f7eea",
+  "active": "2486246bf71f8798",
   "lastOpenFiles": [
-    "javaScript&typeScript/nestJS/nestJS.md",
+    "mariaDB/WAN-slave.md",
+    "mariaDB/Dual-master-replication&Multiple master slaves.md",
+    "mariaDB/mariaDB-replication.md",
+    "mariaDB/replication-light-summary.md",
     "README.md",
+    "mariaDB/performance-optimization.md",
+    "mariaDB/performance-analysis.md",
+    "javaScript&typeScript/nestJS/nestJS.md",
     "haproxy/haproxy.md",
     "PM2/PM2.md",
     "javaScript&typeScript/decorator.md",
     "javaScript&typeScript/JS&TS.md",
-    "mariaDB/replication.md",
     "mariaDB/galera-cluster.md",
     "mariaDB/mariaDB.md",
     "markdown/markdown-cheat-sheet.md",

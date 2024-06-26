@@ -1,2 +1,2 @@
 [[galera-cluster]]
-[[replication]]
+[[replication-light-summary]]
