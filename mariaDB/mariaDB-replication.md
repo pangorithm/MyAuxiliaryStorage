@@ -10,12 +10,12 @@
 ### 마스터 노드 설정
 마스터 노드로 사용하기 위해서는 설정파일에서 아래의 옵션 설정이 필요하다.
 
-<필수 옵션>
+#### 필수 옵션
 * server-id : 유일한 값이어야하며 1 ~ 2^32-1 설정 가능
 * bind-adress : mariaDB 인스턴스가 커넥션 연결을 허용할 ip 주소
 * log-bin : 바이너리 로그 저장 위치
 
-<추가 옵션>
+#### 추가 옵션
 * expire_log_days : 빈로그 보관 일수
 * sync_binlog : 쓰기할 때마다 이벤트 후에 바이너리 로그 파일을 디스크에 동기화(flush)한다. (1일 경우 활성화)
 * slave_compressed_protocol : 슬레이브가 이 옵션을 함 사용할 경우 압축을 사용한다.
@@ -144,10 +144,10 @@ show slave status; # 변환 여부 확인
 ### 병렬 복제  
 기본적으로 복제는 단일 스레드로 동작하지만 병력 복제를 활성화 시키면 최대 10배까지 빨라질 수 있다.  
 
-<설정파일 필수옵션>  
+#### 설정파일 필수옵션  
 slave-parallel-threads=복제시 사용하는 스레드 수(0 비활성화 ~ 16383 최대) 너무 크게 잡으면 오히려 성능 저하가 발생할 수 있다.  
 
-<추가 옵션>  
+#### 추가 옵션  
 slave_parallel_max_queued : SQL 스레드를 위한 메모리 제한 값  
 slave_domain_parallel_threads : 마스터가 한번에 최대로 예약할 수 있는 연결의 수  
 binlog_commit_wait_count : 바이너리 로그에서 I/O를 설정한다.(설정한 값 만큼의 commit 후 binlog 쓰기 작업을 시도한다.)  
