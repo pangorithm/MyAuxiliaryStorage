@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mariaDB/Dual-master-replication&Multiple master slaves.md",
+                "file": "mariaDB/WAN-slave.md",
                 "mode": "preview",
                 "source": false
               }
@@ -39,7 +39,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "2c0320a203824852",
@@ -51,7 +52,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mariaDB/Dual-master-replication&Multiple master slaves.md",
+                "file": "mariaDB/WAN-slave.md",
                 "mode": "source",
                 "source": false
               }
@@ -123,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mariaDB/Dual-master-replication&Multiple master slaves.md",
+                "file": "mariaDB/WAN-slave.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +141,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mariaDB/Dual-master-replication&Multiple master slaves.md",
+                "file": "mariaDB/WAN-slave.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -163,7 +164,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mariaDB/Dual-master-replication&Multiple master slaves.md"
+                "file": "mariaDB/WAN-slave.md"
               }
             }
           }
@@ -186,8 +187,9 @@
   },
   "active": "2486246bf71f8798",
   "lastOpenFiles": [
-    "mariaDB/WAN-slave.md",
     "mariaDB/Dual-master-replication&Multiple master slaves.md",
+    "mariaDB/Dual-master-replication&Multiple-master-slaves.md",
+    "mariaDB/WAN-slave.md",
     "mariaDB/mariaDB-replication.md",
     "mariaDB/replication-light-summary.md",
     "README.md",
