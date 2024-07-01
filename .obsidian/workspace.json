@@ -20,12 +20,12 @@
             }
           },
           {
-            "id": "482ed25c07911f12",
+            "id": "6d4d2a3c630b5faf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mariaDB/Technical-description.md",
+                "file": "mariaDB/Multi-master-replication.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mariaDB/Technical-description.md",
+                "file": "mariaDB/Multi-master-replication.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mariaDB/Technical-description.md",
+                "file": "mariaDB/Multi-master-replication.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mariaDB/Technical-description.md"
+                "file": "mariaDB/Multi-master-replication.md"
               }
             }
           }
@@ -159,17 +159,18 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "482ed25c07911f12",
+  "active": "6d4d2a3c630b5faf",
   "lastOpenFiles": [
+    "README.md",
+    "mariaDB/Multi-master-replication.md",
+    "mariaDB/Dual-master-replication&Multiple-master-slaves.md",
+    "mariaDB/Technical-description.md",
     "mariaDB/galera-cluster-light-summary.md",
     "image/galera-cluster-node-state.png",
-    "mariaDB/Technical-description.md",
     "image",
-    "README.md",
     "mariaDB/replication-light-summary.md",
     "mariaDB/WAN-slave.md",
     "mariaDB/Dual-master-replication&Multiple master slaves.md",
-    "mariaDB/Dual-master-replication&Multiple-master-slaves.md",
     "mariaDB/mariaDB-replication.md",
     "mariaDB/performance-optimization.md",
     "mariaDB/performance-analysis.md",

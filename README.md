@@ -15,7 +15,8 @@ Make a note of something, or try [the Importer](https://help.obsidian.md/Plugins
 [WAN-slave](https://pangorithm.github.io/MyAuxiliaryStorage/mariaDB/WAN-slave)  
 [Dual-master-replication&Multiple-master-slaves](https://pangorithm.github.io/MyAuxiliaryStorage/mariaDB/Dual-master-replication&Multiple-master-slaves)  
 [galera-cluster-light-summary](https://pangorithm.github.io/MyAuxiliaryStorage/mariaDB/galera-cluster-light-summary)  
-[Technical-description](https://pangorithm.github.io/MyAuxiliaryStorage/mariaDB/Technical-description)  
+[Technical-description](https://pangorithm.github.io/MyAuxiliaryStorage/mariaDB/Technical-description)   
+[Multi-master-replication](https://pangorithm.github.io/MyAuxiliaryStorage/mariaDB/Multi-master-replication)  
 
 [JS&TS](https://pangorithm.github.io/MyAuxiliaryStorage/javaScript&typeScript/JS&TS)  
 [decorator](https://pangorithm.github.io/MyAuxiliaryStorage/javaScript&typeScript/decorator)  
