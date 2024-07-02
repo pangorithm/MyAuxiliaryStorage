@@ -20,18 +20,6 @@
             }
           },
           {
-            "id": "d80374086c61b228",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mariaDB/Spider engine.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "6d4d2a3c630b5faf",
             "type": "leaf",
             "state": {
@@ -43,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mariaDB/Spider engine.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mariaDB/Spider engine.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mariaDB/Spider engine.md"
+                "file": "README.md"
               }
             }
           }
@@ -171,10 +158,11 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "d80374086c61b228",
+  "active": "c25407fa74f1f2e4",
   "lastOpenFiles": [
-    "README.md",
     "mariaDB/Spider engine.md",
+    "mariaDB/Spider-engine.md",
+    "README.md",
     "mariaDB/Dual-master-replication&Multiple-master-slaves.md",
     "mariaDB/Multi-master-replication.md",
     "mariaDB/Technical-description.md",

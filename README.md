@@ -17,7 +17,7 @@ Make a note of something, or try [the Importer](https://help.obsidian.md/Plugins
 [galera-cluster-light-summary](https://pangorithm.github.io/MyAuxiliaryStorage/mariaDB/galera-cluster-light-summary)  
 [Technical-description](https://pangorithm.github.io/MyAuxiliaryStorage/mariaDB/Technical-description)   
 [Multi-master-replication](https://pangorithm.github.io/MyAuxiliaryStorage/mariaDB/Multi-master-replication)  
-[Spider engine](https://pangorithm.github.io/MyAuxiliaryStorage/mariaDB/Spider engine)  
+[Spider-engine](https://pangorithm.github.io/MyAuxiliaryStorage/mariaDB/Spider-engine)  
 
 [JS&TS](https://pangorithm.github.io/MyAuxiliaryStorage/javaScript&typeScript/JS&TS)  
 [decorator](https://pangorithm.github.io/MyAuxiliaryStorage/javaScript&typeScript/decorator)  
