@@ -20,18 +20,19 @@
             }
           },
           {
-            "id": "6d4d2a3c630b5faf",
+            "id": "2eb69baa1cc9bfb2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mariaDB/Multi-master-replication.md",
+                "file": "mariaDB/Galera-cluster-administration.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "mariaDB/Galera-cluster-administration.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "mariaDB/Galera-cluster-administration.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "mariaDB/Galera-cluster-administration.md"
               }
             }
           }
@@ -158,13 +159,14 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "c25407fa74f1f2e4",
+  "active": "2eb69baa1cc9bfb2",
   "lastOpenFiles": [
+    "README.md",
+    "mariaDB/Galera-cluster-administration.md",
+    "mariaDB/Multi-master-replication.md",
     "mariaDB/Spider engine.md",
     "mariaDB/Spider-engine.md",
-    "README.md",
     "mariaDB/Dual-master-replication&Multiple-master-slaves.md",
-    "mariaDB/Multi-master-replication.md",
     "mariaDB/Technical-description.md",
     "mariaDB/galera-cluster-light-summary.md",
     "image/galera-cluster-node-state.png",
@@ -189,7 +191,6 @@
     "pangorithm's obsidian.md",
     "haproxy",
     "nginx",
-    "create a link.md",
     "javaScript&typeScript",
     "무제 파일.canvas",
     "무제 파일 1.canvas"
