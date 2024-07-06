@@ -163,3 +163,172 @@ wsrep_sst_common이란 파일명으로 리눅스의 경우 /usr/bin에 설치한
 예를 들어, `wsrep_sst_galera-sst`라는 스크립트를 작성한 경우, `my.cnf`에 다음 줄을 추가한다
 `wsrep_sst_method = galera-sst`
 노드가 시작될 때 커스텀 스크립트를 사용하여 상태 스냅샷 전송을 수행합니다.
+
+
+### Galera System Tables
+
+```sql
+# 갈레라 복제 관련 시스템 테이블 조회
+show tables from mysql like 'wsrep%';
+```
+#### 조회 결과 테이블
+* wsrep_cluster : 클러스터의 UUID와 기타 식별정보, 클러스터의 기능 등 저장
+	```
+	select colum_name from information_schema.columns
+	where table_schema='mysql' and table_name='wsrep_cluster';
+	# 조회 결과 : cluster_uuid, view_id, view_seqno, protocol_version, capabilities
+	``` 
+* wsrep_cluster_members : 클러스터 구성원 정보 저
+	```sql
+	select colum_name from information_schema.columns
+	where table_schema='mysql' and table_name='wsrep_cluster_members';
+	# 조회 결과 : node_uuid, cluster_uuid, node_name, node_incoming_address
+	```
+* wsrep_streaming_log : 진행 중인 스트리밍 트랜잭션에 대한 메타 데이터와 행 이벤트, 쓰기 집합 저장
+  ```sql
+    select colum_name from information_schema.columns
+	where table_schema='mysql' and table_name='wsrep_streaming_log';
+	# 조회 결과 : node_uuid, trx_id, seqno, flags, frag
+
+	```
+
+### 스키마 업그레이드
+#### TOI(Total Order Isolation)
+온라인 스키마의 변경 내용을 클러스터를 통해 복제하고 클러스터가 DDL문을 처리하는 동안 다른 트랜잭션의 차단을 신경쓰지 않아도 된다.  
+`set global wsrep_OSU_method='TOI';`  
+##### 고려사항
+1. 클러스터가 모든 이전 트랜잭션을 커밋한 후에만 실행되기 때문에 이전 트랜잭션과 충돌하지 않는다.
+2. DDL이 실행되는 동안 진행 중이던 트랜잭션과 동일한 DB 리소스가 관련된 트랜잭션은 커밋 시 교착 상태 오류가 발생하여 롤백된다.
+3. 클러스터는 스키마 변경 쿼리를 실행하기 전에 DDL 쿼리를 복제한다. 개별 노드가 쿼리 처리에 성공했는지 여부는 알 수 없고 스키마 변경에 대한 오류 검사를 방지한다.
+#### Rolling Schema Upgrade(RSU)
+스키마 업그레이드 중에 고가용성을 유지하고 새 스키마 정의와 이전 스키마 정의 간의 충돌을 방지할 수 있다,  
+`set global wsrep_OSU_method='RSU';`  
+스키마를 변경하는 쿼리가 로컬 노드에서만 처리되고 그동안 클러스터와의 동기화가 해제된다. 스키마 변경 처리가 완료되면 지연된 복제 이벤트를 적용하여 클러스터와 동기화 한다.  
+클러스터 전체의 스키마를 변경하기 위해서는 각 노드에서 차례로 쿼리를 실행해야 한다. 이때 쿼리가 아직 실행되지 않은 노드는 이전 스키마 구조를 사용하고 있다는 것을 주의해야 한다.  
+한 번에 하나의 노드만 차단된다는 장점이 있지만 새 스키마 정의와 이전 스키마 정의가 복제 이벤트에서 호환되지 않을 경우 퇴출 당할 수 있다는 위험이 있다.
+
+#### Non-Blocking Operations(Galera cluster Enterprise Edition)
+장기 실행 DDL문이 클러스터 업데이트를 차단하는 경우 사용하는 비차단 방법
+`set global wsrep_OSU_method='NBO';` 
+DDL 쿼리가 클러스터의 모든 노드에 복제된 뒤 이전의 모든 트랜잭션이 동시에 커밋될 때까지 기다린 다음 별도로 스키마 변경을 실행한다. DDL 처리 중에는 다른 트랜잭션을 커밋할 수 없다.
+##### 장점
+1. NBO를 사용하여 다른 테이블을 변경할 수 있다.
+2. 변경 중이 아닌 테이블에 데이터를 삽입할 수 있다.
+3. 한 노드가 충돌하면 다른 노드에서 작업이 계속되고 , 성공하면 지속된다.
+##### 고려사항
+1. 지원되는 DDL 명령문
+   ```sql
+   ALTER TABLE table_name LOCK = {SHARED|EXCLUSIVE}, 추가적인_변경사항; 
+   ALTER TABLE table_name LOCK = {SHARED|EXCLUSIVE} PARTITION; 
+   ANALYZE TABLE 
+   OPTIMIZE TABLE
+	 ```
+2.  지원되지 않는 DDL 명령문
+   ```sql
+   ALTER TABLE LOCK = {DEFAULT|NONE}; # 잠금 절을 생략하는 것이 금지된다.
+   CREATE 
+   RENAME 
+   DROP 
+   REPAIR
+   ```
+3. Lock 요소 없이 Create 문을 실행할 경우 오류가 발생할수 있으므로 서버 전체에서 NBO를 사용하는 것은 권장되지 않는다.
+4. 변경 중인 테이블은 쓰기를 할 수 없다. 잠금 수준에 따라 읽기도 차단될 수 있다.
+5. 변경되는 테이블에 대해 긴 트랜잭션이 진행 중인 경우 클러스터가 차단될 수 있다.
+6. DDL 작업이 실행되는 동안 노드는 SST 기여자 노드가 될 수 없다.
+7. NBO DDL 작업이 진핸되는 동안 노드가 클러스터를 떠나면 데이터 일관성이 사라녀 IST가 아닌 SST를 통해서만 클러스터에 다시 참여할 수 있다.
+8. 한 번에 두 개 이상의 테이블에서 NBO 작업을 수행해서는 안된다.
+9. NBO 방식으로 DDL문이 수행되는 동안 RSU 방식으로 스키마 업그레이드를 수행하면 안된다.
+
+### Galera cluster 업그레이드
+#### Rolling Upgrade
+클러스터를 활성 상태로 유지해야 하고 각 노드를 업그레이드 하는데 걸리는 시간을 고려하지 않은 경우 사용하는 방식.  
+각 노드를 개별적으로 종료하고 소프트웨어를 업그레이드 한 다음 노드를 재시작 한다.  
+#### Bulk Upgrade
+모든 노드를 종료하고 업그레이드를 수행한 다음 클러스터를 다시 온라인으로 전환한다. 빠르게 업그레이드를 진행할 수 있지만, 완전히 서비스가 중단된다.
+#### Upgrading Galera Replication Plugin
+```bash
+# redhat
+yum update galera
+# debian
+apt-get update
+apt-get upgrade galera
+```
+#### Update Galera cluster
+1. 모든 클러스트의 load 중지
+2. 클러스터의 각 노드에서 다음 쿼리 실행
+   `SET GLOBAL wsrep_provider='none';` 
+   `SET GLOBAL wsrep_provider='/usr/lib64/galera/libgalera_smm.so';`
+3. 클러스터의 노드 중 하나에서 다음 쿼리 실행
+   `SET GLOBAL wsrep_cluster_address='gcomm://';`
+4. 클러스터의 다른 모든 노드에서 다음 쿼리 실행
+   `SET GLOBAL wsrep_cluster_address='gcomm://node1addr';`
+5. 클러스터에서 로드를 재개
+
+### 기본 구성요소 복구
+1. 가장 최신 상태의 노드 찾기
+   `SHOW STATUS LIKE 'wsrep_last_committed';`
+2-1. 가장 최신 상태의 노드에서 자동 부트스트랩 설정 
+   `SET GLOBAL wsrep_provider_options='pc.bootstrap=YES';`
+2-2. 수동 부트스트랩
+	 2-2-1. 가장 최신 상태의 노드를 마지막으로 모든 노드 종료 
+	 `systemctl stop mariadb`
+	 2-2-2. 가장 최신 상태의 노드에서만 클러스터 생성 명령 실행
+	 `galera_new_cluster`
+	 2-2-3. 나머지 노드에서 순차적으로 실행 명령
+	 `systemctl start mariadb`
+
+### 흐름제어 관리
+흐름제어 모니터링 상태 변수 조: `SHOW STATUS LIKE 'wsrep_flow_control_%';`
+레플리케이션 상태 확인 bash 명령어 : `myq_status wsrep`
+
+### Auto-Eviction
+##### 자동 퇴출 옵션
+`evs.delay_margin` : 클러스터가 지연된 목록에 노드를 추가할 때까지 노드가 예상하는 응답 지연시간 설정
+`evs.delay_keep_period` : 노드가 지연된 목록에서 제거될 때까지 응답을 유지해야 하는 기간 설정
+`evs.evivt` : 클러스터가 특정 노드 값에 대한 수동 제거를 트리거 하는 지점 설정(빈 문자열로 설정할 경우 지연 목록 삭제)
+`evs.auto_evict` : 자동 퇴출 발생 전 지연된 노드에서 허용되는 항목 수 설정
+`evs.version` : 노드가 사용하는 EVS 프로토콜 버전 설정
+##### 퇴출 상태 확인
+`SHOW STATUS LIKE 'wsrep_evs_delayed';`
+* wsrep_evs_state : EVS 프로토콜 내부 상태 확인
+* wsrep_evs_delayed : 지연된 노드 목록 확인
+* wsrep_evs_evict_list :  퇴출된 노드의 UUID 목록 확인
+
+### 갈레라 중재인
+갈레라 중재인은 복제에 참여하지 않지만 다른 모든 노드와 동일한 데이터를 수신한다. 이는 스플릿 브레인 방지 등에 사용된다.  
+갈레라 중재인은 Galera Cluster와 별개의 데몬이므로 my.cnf 파일로 구성할 수 없고 클러스터와 별개로 시작해야 한다.  
+##### 갈레라 중재인을 구성하는 방법
+1-1. shell 명령 사용
+   ```bash
+garbd --group=example_cluster \
+--address="gcomm://192.168.1.1,192.168.1.2,192.168.1.3" \
+--option="socket.ssl_key=/etc/ssl/galera/server-key.pem;socket.ssl_cert=/etc/ssl/galera/server-cert.pem;socket.ssl_ca=/etc/ssl/galera/ca-cert.pem; socket.ssl_cipher=AES128-SHA256""
+```
+1-2 명령어를 실행할 때마다 입력하기 싫을 경우 설정 파일(arbitrator.config) 구성
+   ```bash
+arbitrator.config group = example_cluster 
+address = gcomm://192.168.1.1,192.168.1.2,192.168.1.3
+```
+1-2-1. 갈레라 중재자 시작 : `garbd --cfg /path/to/arbitrator.config`
+1-2-2. 갈레라 중재자 쉘 명령 옵션 확인 : `garbd --help`
+2. 갈레라 중재자를 서비스로 시작하기, 설정 파일 작성
+   설정 파일은 배포판마다 다르지만 /etc 하위 경로에 존재한다.(일반적으로 아래 위치 중에 존재)
+   • /etc/defaults/ 
+   • /etc/init.d/ 
+   • /etc/systemd/ 
+   • /etc/sysconfig/
+   ```
+   # Copyright (C) 2013-2015 Codership Oy 
+   # This config file is to be sourced by garbd service script. 
+   # A space-separated list of node addresses (address[:port]) in the cluster: 
+   GALERA_NODES="192.168.1.1:4567 192.168.1.2:4567" 
+   # Galera cluster name, should be the same as on the rest of the node. 
+   GALERA_GROUP="example_wsrep_cluster" 
+   # Optional Galera internal options string (e.g. SSL settings) 
+   # see https://galeracluster.com/documentation/galera-parameters.html 
+   GALERA_OPTIONS="socket.ssl_cert=/etc/galera/cert/cert.pem;socket.ssl_key=/$" 
+   # Log file for garbd. Optional, by default logs to syslog 
+   LOG_FILE="/var/log/garbd.log"
+   ```
+3. 서비스 시작
+   `systemctl start garb`
