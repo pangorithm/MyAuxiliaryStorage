@@ -19,6 +19,7 @@ Make a note of something, or try [the Importer](https://help.obsidian.md/Plugins
 [Multi-master-replication](https://pangorithm.github.io/MyAuxiliaryStorage/mariaDB/Multi-master-replication)  
 [Spider-engine](https://pangorithm.github.io/MyAuxiliaryStorage/mariaDB/Spider-engine)  
 [Galera-cluster-administration](https://pangorithm.github.io/MyAuxiliaryStorage/mariaDB/Galera-cluster-administration)  
+[Cluster-Monitoring](https://pangorithm.github.io/MyAuxiliaryStorage/mariaDB/Cluster-Monitoring)  
 
 [JS&TS](https://pangorithm.github.io/MyAuxiliaryStorage/javaScript&typeScript/JS&TS)  
 [decorator](https://pangorithm.github.io/MyAuxiliaryStorage/javaScript&typeScript/decorator)  

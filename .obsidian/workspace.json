@@ -20,12 +20,12 @@
             }
           },
           {
-            "id": "2eb69baa1cc9bfb2",
+            "id": "ce95f2c2c9310e4b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mariaDB/Galera-cluster-administration.md",
+                "file": "mariaDB/Cluster-Monitoring.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mariaDB/Galera-cluster-administration.md",
+                "file": "mariaDB/Cluster-Monitoring.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mariaDB/Galera-cluster-administration.md",
+                "file": "mariaDB/Cluster-Monitoring.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mariaDB/Galera-cluster-administration.md"
+                "file": "mariaDB/Cluster-Monitoring.md"
               }
             }
           }
@@ -159,15 +159,16 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "2eb69baa1cc9bfb2",
+  "active": "ce95f2c2c9310e4b",
   "lastOpenFiles": [
     "README.md",
+    "mariaDB/Cluster-Monitoring.md",
+    "mariaDB/Technical-description.md",
     "mariaDB/Galera-cluster-administration.md",
     "mariaDB/Multi-master-replication.md",
     "mariaDB/Spider engine.md",
     "mariaDB/Spider-engine.md",
     "mariaDB/Dual-master-replication&Multiple-master-slaves.md",
-    "mariaDB/Technical-description.md",
     "mariaDB/galera-cluster-light-summary.md",
     "image/galera-cluster-node-state.png",
     "image",
@@ -188,7 +189,6 @@
     "nginx/nginx.md",
     "nginx/command.md",
     "nginx/config.md",
-    "pangorithm's obsidian.md",
     "haproxy",
     "nginx",
     "javaScript&typeScript",
