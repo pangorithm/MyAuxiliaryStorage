@@ -7,8 +7,7 @@ Make a note of something, or try [the Importer](https://help.obsidian.md/Plugins
 [markdown-cheat-sheet](https://pangorithm.github.io/MyAuxiliaryStorage/markdown/markdown-cheat-sheet)  
 
 [mariaDB](https://pangorithm.github.io/MyAuxiliaryStorage/mariaDB/mariaDB)  
-[performance-analysis
-](https://pangorithm.github.io/MyAuxiliaryStorage/mariaDB/performance-analysis)  
+[performance-analysis](https://pangorithm.github.io/MyAuxiliaryStorage/mariaDB/performance-analysis)  
 [performance-optimization](https://pangorithm.github.io/MyAuxiliaryStorage/mariaDB/performance-optimization)  
 [replication-light-summary](https://pangorithm.github.io/MyAuxiliaryStorage/mariaDB/replication-light-summary)  
 [mariaDB-replication](https://pangorithm.github.io/MyAuxiliaryStorage/mariaDB/mariaDB-replication)  
@@ -22,8 +21,10 @@ Make a note of something, or try [the Importer](https://help.obsidian.md/Plugins
 [Cluster-Monitoring](https://pangorithm.github.io/MyAuxiliaryStorage/mariaDB/Cluster-Monitoring)  
 
 [JS&TS](https://pangorithm.github.io/MyAuxiliaryStorage/javaScript&typeScript/JS&TS)  
+[nodeJS](https://pangorithm.github.io/MyAuxiliaryStorage/javaScript&typeScript/nestJS/nodeJS)  
 [decorator](https://pangorithm.github.io/MyAuxiliaryStorage/javaScript&typeScript/decorator)  
 [nestJS](https://pangorithm.github.io/MyAuxiliaryStorage/javaScript&typeScript/nestJS/nestJS)  
+[Interface](https://pangorithm.github.io/MyAuxiliaryStorage/javaScript&typeScript/nestJS/Interface)  
 
 [PM2](https://pangorithm.github.io/MyAuxiliaryStorage/PM2/PM2)  
 
