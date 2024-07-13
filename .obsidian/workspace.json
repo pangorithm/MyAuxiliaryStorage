@@ -54,9 +54,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "b955072a04edb773",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -122,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "javaScript&typeScript/nestJS/Interface.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "javaScript&typeScript/nestJS/Interface.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "javaScript&typeScript/nestJS/Interface.md"
+                "file": "README.md"
               }
             }
           }
@@ -183,14 +195,15 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "05a2222df43fe90e",
+  "active": "b955072a04edb773",
   "lastOpenFiles": [
-    "javaScript&typeScript/nestJS/nestJS.md",
-    "javaScript&typeScript/nestJS/Interface.md",
-    "javaScript&typeScript/decorator.md",
-    "javaScript&typeScript/nodeJS.md",
-    "javaScript&typeScript/JS&TS.md",
+    "javaScript&typeScript/nestJS/Provier.md",
     "README.md",
+    "javaScript&typeScript/nodeJS.md",
+    "javaScript&typeScript/nestJS/Interface.md",
+    "javaScript&typeScript/nestJS/nestJS.md",
+    "javaScript&typeScript/decorator.md",
+    "javaScript&typeScript/JS&TS.md",
     "nginx/nginx.md",
     "mariaDB/mariaDB.md",
     "image/galera-cluster-node-state.png",
@@ -212,7 +225,6 @@
     "mariaDB/performance-analysis.md",
     "PM2/PM2.md",
     "markdown/markdown-cheat-sheet.md",
-    "markdown/markdown.md",
     "haproxy",
     "nginx",
     "javaScript&typeScript",
