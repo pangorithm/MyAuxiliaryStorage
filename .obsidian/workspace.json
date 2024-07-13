@@ -13,62 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ce95f2c2c9310e4b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "javaScript&typeScript/decorator.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6ced7bc7743d37c1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "javaScript&typeScript/nestJS/nestJS.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "05a2222df43fe90e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "javaScript&typeScript/nestJS/Interface.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b955072a04edb773",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
+                "file": "javaScript&typeScript/nestJS/Module.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -134,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "javaScript&typeScript/nestJS/Module.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "javaScript&typeScript/nestJS/Module.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "javaScript&typeScript/nestJS/Module.md"
               }
             }
           }
@@ -195,14 +146,15 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "b955072a04edb773",
+  "active": "c25407fa74f1f2e4",
   "lastOpenFiles": [
-    "javaScript&typeScript/nestJS/Provier.md",
     "README.md",
-    "javaScript&typeScript/nodeJS.md",
-    "javaScript&typeScript/nestJS/Interface.md",
-    "javaScript&typeScript/nestJS/nestJS.md",
     "javaScript&typeScript/decorator.md",
+    "javaScript&typeScript/nestJS/nestJS.md",
+    "javaScript&typeScript/nestJS/Interface.md",
+    "javaScript&typeScript/nodeJS.md",
+    "javaScript&typeScript/nestJS/Module.md",
+    "javaScript&typeScript/nestJS/Provier.md",
     "javaScript&typeScript/JS&TS.md",
     "nginx/nginx.md",
     "mariaDB/mariaDB.md",
@@ -224,7 +176,6 @@
     "mariaDB/performance-optimization.md",
     "mariaDB/performance-analysis.md",
     "PM2/PM2.md",
-    "markdown/markdown-cheat-sheet.md",
     "haproxy",
     "nginx",
     "javaScript&typeScript",

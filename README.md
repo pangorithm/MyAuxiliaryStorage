@@ -26,6 +26,7 @@ Make a note of something, or try [the Importer](https://help.obsidian.md/Plugins
 [nestJS](https://pangorithm.github.io/MyAuxiliaryStorage/javaScript&typeScript/nestJS/nestJS)  
 [Interface](https://pangorithm.github.io/MyAuxiliaryStorage/javaScript&typeScript/nestJS/Interface)  
 [Provider](https://pangorithm.github.io/MyAuxiliaryStorage/javaScript&typeScript/nestJS/Provider)  
+[Module](https://pangorithm.github.io/MyAuxiliaryStorage/javaScript&typeScript/nestJS/Module)  
 
 [PM2](https://pangorithm.github.io/MyAuxiliaryStorage/PM2/PM2)  
 
