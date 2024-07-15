@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "1dc50930c50e3e06",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "javaScript&typeScript/nestJS/Middleware.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "javaScript&typeScript/nestJS/Middleware.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "javaScript&typeScript/nestJS/Middleware.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "javaScript&typeScript/nestJS/Middleware.md"
               }
             }
           }
@@ -159,11 +171,12 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "79656bb5d0d35447",
+  "active": "1e9257449eee0f83",
   "lastOpenFiles": [
+    "README.md",
+    "javaScript&typeScript/nestJS/Middleware.md",
     "javaScript&typeScript/nestJS/Pipe.md",
     "javaScript&typeScript/nestJS/Module.md",
-    "README.md",
     "javaScript&typeScript/decorator.md",
     "javaScript&typeScript/nestJS/nestJS.md",
     "javaScript&typeScript/nestJS/Interface.md",
@@ -188,7 +201,6 @@
     "mariaDB/Dual-master-replication&Multiple master slaves.md",
     "mariaDB/mariaDB-replication.md",
     "mariaDB/performance-optimization.md",
-    "mariaDB/performance-analysis.md",
     "haproxy",
     "nginx",
     "javaScript&typeScript",
