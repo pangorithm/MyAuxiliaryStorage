@@ -35,3 +35,34 @@ throw new HttpException({
 - **데이터의 직렬화와 역직렬화**: DTO는 데이터의 직렬화와 역직렬화에 용이하다. 이는 네트워크를 통해 데이터를 전송하거나, API 응답으로 데이터를 반환할 때 유용하다.
 - **안전성과 일관성**: DTO를 사용하면, 특정 계층에서 필요한 데이터만을 노출하여 데이터의 안전성과 일관성을 유지할 수 있다.
 추가적으로 DTO 클래스를 정의할 때 속성 파라미터를 사용하여 유효성 검사 등의 작업을 자동화 할 수 있다.
+
+### 커스텀 매개변수 데커레이터
+nestJS의 함수를 활용해 손쉽게 커스텀 파라미터 데커레이터를 만들 수 있다.
+###### 정의
+```typescript
+import { createParamDecorator, ExcutionContext } from '@nestjs/common';
+
+export const MyObj = createParamDecorator(
+  (data: unknown, ctx: ExcutionContext) => { // data: 데커레이터에 인수로 넘기는 값
+    const request = ctx.switchToHttp().getRequest();
+    return request.myObj;
+  }
+)
+
+```
+
+###### 사용
+```typescript
+interface MyObj {
+  // 속성 생략
+}
+
+@Controller()
+export class AppController {
+  
+  @Get()
+  getHello(@MyObj() myObj: MyObj) {
+    console.log(myObj);
+  }
+}
+```
