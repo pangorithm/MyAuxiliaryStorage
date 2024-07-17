@@ -30,6 +30,7 @@ Make a note of something, or try [the Importer](https://help.obsidian.md/Plugins
 [Pipe](https://pangorithm.github.io/MyAuxiliaryStorage/javaScript&typeScript/nestJS/Pipe)  
 [Middleware](https://pangorithm.github.io/MyAuxiliaryStorage/javaScript&typeScript/nestJS/Middleware)  
 [Guard](https://pangorithm.github.io/MyAuxiliaryStorage/javaScript&typeScript/nestJS/Guard)  
+[Exception-Filter](https://pangorithm.github.io/MyAuxiliaryStorage/javaScript&typeScript/nestJS/Exception-Filter)  
 
 [PM2](https://pangorithm.github.io/MyAuxiliaryStorage/PM2/PM2)  
 
