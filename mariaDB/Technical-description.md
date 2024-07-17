@@ -113,7 +113,9 @@ Galera 클러스터는 쓰기 집합을 write-set 또는 GCache라는 특수 캐
 	* gcs.fc_factor: 흐름 제어가 해제되는 지점을 결정한다.
 
 ### 노드의 상태 변화  
-![[galera-cluster-node-state.png]]
+
+![galera-cluster-node-state.png](https://pangorithm.github.io/MyAuxiliaryStorage/image/galera-cluster-node-state.png)  
+
 1. 노드가 시작되고 기본 컴포넌트에 대한 연결을 설정하다.
 2. 노드가 상태 전송에 성공하면 쓰기 집합을 캐시하기 시작한다.
 3. 노드가 SST를 받는다. 이제 모든 클러스터 데이터를 호가보하고 캐시된 쓰기 집합을 적용하기 시작한다. 이때 노드는 흐름 제어를 활성화하여 슬레이브 대기열의 최종 감소를 보장한다.

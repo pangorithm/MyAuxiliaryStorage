@@ -67,3 +67,7 @@ export class HandlerRolesGuard implements CanActivate {
   }
 }
 ```
+
+### 요청 생명주기
+![nestjs-request-life-cycle.png](https://pangorithm.github.io/MyAuxiliaryStorage/image/nestjs-request-life-cycle.png)  
+요청을 받을 때는 전역->컨트롤러->라우터 순서로 컴포넌트가 적용되지만 응답을 내보낼때는 반대로 라우터->컨트롤러->전역 순서로 컴포넌트가 적용된다

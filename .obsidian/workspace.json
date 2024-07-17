@@ -42,9 +42,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "26e6b96f30c650cf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "javaScript&typeScript/nestJS/nestJS.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "javaScript&typeScript/nestJS/Exception-Filter.md",
+                "file": "javaScript&typeScript/nestJS/nestJS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "javaScript&typeScript/nestJS/Exception-Filter.md",
+                "file": "javaScript&typeScript/nestJS/nestJS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "javaScript&typeScript/nestJS/Exception-Filter.md"
+                "file": "javaScript&typeScript/nestJS/nestJS.md"
               }
             }
           }
@@ -171,14 +183,22 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "2b59ff3992734f99",
+  "active": "26e6b96f30c650cf",
   "lastOpenFiles": [
+    "mariaDB/Technical-description.md",
     "README.md",
+    "markdown/markdown-cheat-sheet.md",
+    "mariaDB/Dual-master-replication&Multiple-master-slaves.md",
+    "mariaDB/galera-cluster-light-summary.md",
+    "mariaDB/Galera-cluster-administration.md",
+    "javaScript&typeScript/nestJS/nestJS.md",
+    "image/nestjs-request-life-cycle.png",
+    "image/nestjs-request-life-cycle.png.crdownload",
+    "javaScript&typeScript/nestJS/Intercepter.md",
+    "javaScript&typeScript/nestJS/Interface.md",
     "javaScript&typeScript/nestJS/Exception-Filter.md",
     "javaScript&typeScript/nestJS/Guard.md",
-    "javaScript&typeScript/nestJS/nestJS.md",
     "javaScript&typeScript/nestJS/Pipe.md",
-    "javaScript&typeScript/nestJS/Interface.md",
     "javaScript&typeScript/nestJS/Module.md",
     "javaScript&typeScript/nestJS/Middleware.md",
     "javaScript&typeScript/decorator.md",
@@ -190,17 +210,11 @@
     "image/galera-cluster-node-state.png",
     "haproxy/haproxy.md",
     "mariaDB/Cluster-Monitoring.md",
-    "mariaDB/Technical-description.md",
-    "mariaDB/Galera-cluster-administration.md",
     "mariaDB/Multi-master-replication.md",
     "mariaDB/Spider engine.md",
     "mariaDB/Spider-engine.md",
-    "mariaDB/Dual-master-replication&Multiple-master-slaves.md",
-    "mariaDB/galera-cluster-light-summary.md",
     "image",
     "mariaDB/replication-light-summary.md",
-    "mariaDB/WAN-slave.md",
-    "mariaDB/Dual-master-replication&Multiple master slaves.md",
     "haproxy",
     "nginx",
     "javaScript&typeScript",
