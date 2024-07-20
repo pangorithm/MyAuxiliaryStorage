@@ -32,6 +32,7 @@ Make a note of something, or try [the Importer](https://help.obsidian.md/Plugins
 [Guard](https://pangorithm.github.io/MyAuxiliaryStorage/javaScript&typeScript/nestJS/Guard)  
 [Exception-Filter](https://pangorithm.github.io/MyAuxiliaryStorage/javaScript&typeScript/nestJS/Exception-Filter)  
 [Intercepter](https://pangorithm.github.io/MyAuxiliaryStorage/javaScript&typeScript/nestJS/Intercepter)  
+[CQRS](https://pangorithm.github.io/MyAuxiliaryStorage/javaScript&typeScript/nestJS/CQRS)  
 
 [PM2](https://pangorithm.github.io/MyAuxiliaryStorage/PM2/PM2)  
 
