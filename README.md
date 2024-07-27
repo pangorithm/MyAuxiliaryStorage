@@ -35,6 +35,7 @@ Make a note of something, or try [the Importer](https://help.obsidian.md/Plugins
 [CQRS](https://pangorithm.github.io/MyAuxiliaryStorage/javaScript&typeScript/nestJS/CQRS)  
 
 [rust](https://pangorithm.github.io/MyAuxiliaryStorage/rust/rust)  
+[기초문법](https://pangorithm.github.io/MyAuxiliaryStorage/rust/기초문법)  
 
 [PM2](https://pangorithm.github.io/MyAuxiliaryStorage/PM2/PM2)  
 

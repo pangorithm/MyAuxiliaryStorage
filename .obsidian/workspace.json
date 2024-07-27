@@ -64,9 +64,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "3d45aef8ab973d7d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "rust/기초문법.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -132,7 +144,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "rust/rust.md",
+                "file": "rust/기초문법.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -149,7 +161,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "rust/rust.md",
+                "file": "rust/기초문법.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -172,7 +184,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "rust/rust.md"
+                "file": "rust/기초문법.md"
               }
             }
           }
@@ -193,9 +205,10 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "18a8c014089337ea",
+  "active": "3d45aef8ab973d7d",
   "lastOpenFiles": [
     "README.md",
+    "rust/기초문법.md",
     "rust/rust.md",
     "rust",
     "javaScript&typeScript/decorator.md",
@@ -224,7 +237,6 @@
     "image/galera-cluster-node-state.png",
     "haproxy/haproxy.md",
     "mariaDB/Cluster-Monitoring.md",
-    "mariaDB/Multi-master-replication.md",
     "image",
     "haproxy",
     "nginx",
