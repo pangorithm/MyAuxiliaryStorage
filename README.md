@@ -34,6 +34,8 @@ Make a note of something, or try [the Importer](https://help.obsidian.md/Plugins
 [Intercepter](https://pangorithm.github.io/MyAuxiliaryStorage/javaScript&typeScript/nestJS/Intercepter)  
 [CQRS](https://pangorithm.github.io/MyAuxiliaryStorage/javaScript&typeScript/nestJS/CQRS)  
 
+[rust](https://pangorithm.github.io/MyAuxiliaryStorage/rust/rust)  
+
 [PM2](https://pangorithm.github.io/MyAuxiliaryStorage/PM2/PM2)  
 
 [nginx](https://pangorithm.github.io/MyAuxiliaryStorage/nginx/nginx)  
