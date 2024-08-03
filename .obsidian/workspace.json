@@ -76,9 +76,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "9125b2af4ef732e5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "rust/ownership.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -144,7 +156,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "rust/기초문법.md",
+                "file": "rust/ownership.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -161,7 +173,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "rust/기초문법.md",
+                "file": "rust/ownership.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -184,7 +196,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "rust/기초문법.md"
+                "file": "rust/ownership.md"
               }
             }
           }
@@ -205,9 +217,10 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "3d45aef8ab973d7d",
+  "active": "9125b2af4ef732e5",
   "lastOpenFiles": [
     "README.md",
+    "rust/ownership.md",
     "rust/기초문법.md",
     "rust/rust.md",
     "rust",
@@ -236,7 +249,6 @@
     "mariaDB/mariaDB.md",
     "image/galera-cluster-node-state.png",
     "haproxy/haproxy.md",
-    "mariaDB/Cluster-Monitoring.md",
     "image",
     "haproxy",
     "nginx",
