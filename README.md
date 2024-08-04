@@ -36,8 +36,9 @@ Make a note of something, or try [the Importer](https://help.obsidian.md/Plugins
 
 [rust](https://pangorithm.github.io/MyAuxiliaryStorage/rust/rust)  
 [기초문법](https://pangorithm.github.io/MyAuxiliaryStorage/rust/기초문법)  
-[ownership](https://pangorithm.github.io/MyAuxiliaryStorage/rust/ownership) 
-[memory](https://pangorithm.github.io/MyAuxiliaryStorage/rust/memory) 
+[ownership](https://pangorithm.github.io/MyAuxiliaryStorage/rust/ownership)  
+[memory](https://pangorithm.github.io/MyAuxiliaryStorage/rust/memory)  
+[module](https://pangorithm.github.io/MyAuxiliaryStorage/rust/module)  
 
 [PM2](https://pangorithm.github.io/MyAuxiliaryStorage/PM2/PM2)  
 

@@ -100,9 +100,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "903d27946d6f0525",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "rust/module.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 7
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -168,7 +180,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "rust/memory.md",
+                "file": "rust/module.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -185,7 +197,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "rust/memory.md",
+                "file": "rust/module.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -208,7 +220,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "rust/memory.md"
+                "file": "rust/module.md"
               }
             }
           }
@@ -229,10 +241,11 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "8d85b981b5986c5a",
+  "active": "1e9257449eee0f83",
   "lastOpenFiles": [
-    "README.md",
     "rust/memory.md",
+    "rust/module.md",
+    "README.md",
     "rust/ownership.md",
     "rust/기초문법.md",
     "rust/rust.md",
@@ -259,7 +272,6 @@
     "javaScript&typeScript/nodeJS.md",
     "javaScript&typeScript/JS&TS.md",
     "nginx/nginx.md",
-    "mariaDB/mariaDB.md",
     "image/galera-cluster-node-state.png",
     "image",
     "haproxy",
