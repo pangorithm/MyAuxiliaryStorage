@@ -39,6 +39,7 @@ Make a note of something, or try [the Importer](https://help.obsidian.md/Plugins
 [ownership](https://pangorithm.github.io/MyAuxiliaryStorage/rust/ownership)  
 [memory](https://pangorithm.github.io/MyAuxiliaryStorage/rust/memory)  
 [module](https://pangorithm.github.io/MyAuxiliaryStorage/rust/module)  
+[exception](https://pangorithm.github.io/MyAuxiliaryStorage/rust/exception)  
 
 [PM2](https://pangorithm.github.io/MyAuxiliaryStorage/PM2/PM2)  
 
