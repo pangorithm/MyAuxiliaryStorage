@@ -34,6 +34,9 @@ Make a note of something, or try [the Importer](https://help.obsidian.md/Plugins
 [Intercepter](https://pangorithm.github.io/MyAuxiliaryStorage/javaScript&typeScript/nestJS/Intercepter)  
 [CQRS](https://pangorithm.github.io/MyAuxiliaryStorage/javaScript&typeScript/nestJS/CQRS)  
 
+[java](https://pangorithm.github.io/MyAuxiliaryStorage/java/java)  
+[data-structure](https://pangorithm.github.io/MyAuxiliaryStorage/java/data-structure)  
+
 [rust](https://pangorithm.github.io/MyAuxiliaryStorage/rust/rust)  
 [기초문법](https://pangorithm.github.io/MyAuxiliaryStorage/rust/기초문법)  
 [ownership](https://pangorithm.github.io/MyAuxiliaryStorage/rust/ownership)  
