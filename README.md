@@ -59,6 +59,7 @@ Make a note of something, or try [the Importer](https://help.obsidian.md/Plugins
 [singleton](https://pangorithm.github.io/MyAuxiliaryStorage/design-pattern/singleton) 
 [builder](https://pangorithm.github.io/MyAuxiliaryStorage/design-pattern/builder) 
 [prototype](https://pangorithm.github.io/MyAuxiliaryStorage/design-pattern/prototype) 
+[adapter](https://pangorithm.github.io/MyAuxiliaryStorage/design-pattern/adapter) 
 
 
 
