@@ -55,6 +55,7 @@ Make a note of something, or try [the Importer](https://help.obsidian.md/Plugins
 
 [design-pattern](https://pangorithm.github.io/MyAuxiliaryStorage/design-pattern/design-pattern) 
 [OOP](https://pangorithm.github.io/MyAuxiliaryStorage/design-pattern/OOP) 
+[factory-pattern](https://pangorithm.github.io/MyAuxiliaryStorage/design-pattern/factory-pattern) 
 
 
 
