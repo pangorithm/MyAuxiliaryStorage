@@ -74,6 +74,7 @@ Make a note of something, or try [the Importer](https://help.obsidian.md/Plugins
 [observer](https://pangorithm.github.io/MyAuxiliaryStorage/design-pattern/observer) 
 [state](https://pangorithm.github.io/MyAuxiliaryStorage/design-pattern/state) 
 [strategy](https://pangorithm.github.io/MyAuxiliaryStorage/design-pattern/strategy) 
+[template-method](https://pangorithm.github.io/MyAuxiliaryStorage/design-pattern/template-method) 
 
 
 
