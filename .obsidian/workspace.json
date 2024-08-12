@@ -239,14 +239,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "design-pattern/adapter.md",
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a2d3822c443893c2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "design-pattern/bridge.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 19
+        "currentTab": 20
       }
     ],
     "direction": "vertical"
@@ -312,7 +324,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "design-pattern/adapter.md",
+                "file": "design-pattern/bridge.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -329,7 +341,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "design-pattern/adapter.md",
+                "file": "design-pattern/bridge.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -352,7 +364,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "design-pattern/adapter.md"
+                "file": "design-pattern/bridge.md"
               }
             }
           }
@@ -373,9 +385,10 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "f8ff8cd3b7ecf83d",
+  "active": "a2d3822c443893c2",
   "lastOpenFiles": [
     "README.md",
+    "design-pattern/bridge.md",
     "design-pattern/adapter.md",
     "design-pattern/prototype.md",
     "design-pattern/builder.md",
@@ -403,7 +416,6 @@
     "javaScript&typeScript/nestJS/nestJS.md",
     "javaScript&typeScript/nestJS/Guard.md",
     "javaScript&typeScript/nestJS/Exception-Filter.md",
-    "mariaDB/Technical-description.md",
     "image/nestjs-request-life-cycle.png",
     "image/nestjs-request-life-cycle.png.crdownload",
     "image/galera-cluster-node-state.png",
