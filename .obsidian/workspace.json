@@ -54,9 +54,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "dc57a79cece1a293",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "design-pattern/state.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b1624062c7677df4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "strategy.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -122,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "design-pattern/observer.md",
+                "file": "strategy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "design-pattern/observer.md",
+                "file": "strategy.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "design-pattern/observer.md"
+                "file": "strategy.md"
               }
             }
           }
@@ -185,6 +209,8 @@
   },
   "active": "1e9257449eee0f83",
   "lastOpenFiles": [
+    "design-pattern/state.md",
+    "strategy.md",
     "README.md",
     "design-pattern/observer.md",
     "design-pattern/memento.md",
@@ -211,8 +237,6 @@
     "javaScript&typeScript/nestJS/Provier.md",
     "java",
     "rust/collection.md",
-    "rust/exception.md",
-    "rust/memory.md",
     "rust",
     "image/nestjs-request-life-cycle.png",
     "image/nestjs-request-life-cycle.png.crdownload",

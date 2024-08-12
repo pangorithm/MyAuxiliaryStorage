@@ -72,6 +72,7 @@ Make a note of something, or try [the Importer](https://help.obsidian.md/Plugins
 [mediator](https://pangorithm.github.io/MyAuxiliaryStorage/design-pattern/mediator) 
 [memento](https://pangorithm.github.io/MyAuxiliaryStorage/design-pattern/memento) 
 [observer](https://pangorithm.github.io/MyAuxiliaryStorage/design-pattern/observer) 
+[state](https://pangorithm.github.io/MyAuxiliaryStorage/design-pattern/state) 
 
 
 
