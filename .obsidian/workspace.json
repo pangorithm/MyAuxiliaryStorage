@@ -263,14 +263,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "design-pattern/composite.md",
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "aaec6e4888eca74b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "design-pattern/decorator.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 21
+        "currentTab": 22
       }
     ],
     "direction": "vertical"
@@ -336,7 +348,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "design-pattern/composite.md",
+                "file": "design-pattern/decorator.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -353,7 +365,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "design-pattern/composite.md",
+                "file": "design-pattern/decorator.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -376,7 +388,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "design-pattern/composite.md"
+                "file": "design-pattern/decorator.md"
               }
             }
           }
@@ -400,6 +412,7 @@
   "active": "1e9257449eee0f83",
   "lastOpenFiles": [
     "README.md",
+    "design-pattern/decorator.md",
     "design-pattern/composite.md",
     "design-pattern/bridge.md",
     "design-pattern/adapter.md",
@@ -427,7 +440,6 @@
     "javaScript&typeScript/nestJS/Pipe.md",
     "javaScript&typeScript/nestJS/CQRS.md",
     "javaScript&typeScript/nestJS/nestJS.md",
-    "javaScript&typeScript/nestJS/Guard.md",
     "image/nestjs-request-life-cycle.png",
     "image/nestjs-request-life-cycle.png.crdownload",
     "image/galera-cluster-node-state.png",

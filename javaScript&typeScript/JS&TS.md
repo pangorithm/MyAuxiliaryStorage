@@ -1,2 +1,2 @@
-[[decorator]]
+[[javaScript&typeScript/decorator]]
 [[nestJS]]
