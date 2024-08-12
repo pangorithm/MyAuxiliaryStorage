@@ -69,6 +69,7 @@ Make a note of something, or try [the Importer](https://help.obsidian.md/Plugins
 [CoR](https://pangorithm.github.io/MyAuxiliaryStorage/design-pattern/CoR) 
 [command](https://pangorithm.github.io/MyAuxiliaryStorage/design-pattern/command) 
 [iterator](https://pangorithm.github.io/MyAuxiliaryStorage/design-pattern/iterator) 
+[mediator](https://pangorithm.github.io/MyAuxiliaryStorage/design-pattern/mediator) 
 
 
 
