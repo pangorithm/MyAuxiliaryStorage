@@ -275,14 +275,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "design-pattern/decorator.md",
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e77a0cb45eefab83",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "design-pattern/facade.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 22
+        "currentTab": 23
       }
     ],
     "direction": "vertical"
@@ -348,7 +360,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "design-pattern/decorator.md",
+                "file": "design-pattern/facade.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -365,7 +377,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "design-pattern/decorator.md",
+                "file": "design-pattern/facade.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -388,7 +400,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "design-pattern/decorator.md"
+                "file": "design-pattern/facade.md"
               }
             }
           }
@@ -409,19 +421,20 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "1e9257449eee0f83",
+  "active": "e77a0cb45eefab83",
   "lastOpenFiles": [
-    "README.md",
-    "design-pattern/decorator.md",
-    "design-pattern/composite.md",
-    "design-pattern/bridge.md",
     "design-pattern/adapter.md",
-    "design-pattern/prototype.md",
+    "design-pattern/bridge.md",
     "design-pattern/builder.md",
-    "design-pattern/singleton.md",
-    "design-pattern/factory-pattern.md",
+    "design-pattern/composite.md",
+    "design-pattern/decorator.md",
     "design-pattern/design-pattern.md",
+    "design-pattern/facade.md",
+    "design-pattern/factory-pattern.md",
     "design-pattern/OOP.md",
+    "design-pattern/prototype.md",
+    "design-pattern/singleton.md",
+    "README.md",
     "design-pattern",
     "java/java.md",
     "java/data-structure.md",
@@ -439,7 +452,6 @@
     "javaScript&typeScript/nestJS/Test.md",
     "javaScript&typeScript/nestJS/Pipe.md",
     "javaScript&typeScript/nestJS/CQRS.md",
-    "javaScript&typeScript/nestJS/nestJS.md",
     "image/nestjs-request-life-cycle.png",
     "image/nestjs-request-life-cycle.png.crdownload",
     "image/galera-cluster-node-state.png",

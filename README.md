@@ -63,6 +63,8 @@ Make a note of something, or try [the Importer](https://help.obsidian.md/Plugins
 [bridge](https://pangorithm.github.io/MyAuxiliaryStorage/design-pattern/bridge) 
 [composite](https://pangorithm.github.io/MyAuxiliaryStorage/design-pattern/composite) 
 [decorator](https://pangorithm.github.io/MyAuxiliaryStorage/design-pattern/decorator) 
+[facade](https://pangorithm.github.io/MyAuxiliaryStorage/design-pattern/facade) 
+
 
 
 
