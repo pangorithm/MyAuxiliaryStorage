@@ -73,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "strategy.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "strategy.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "strategy.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "strategy.md"
+                "file": "README.md"
               }
             }
           }
@@ -209,8 +209,8 @@
   },
   "active": "1e9257449eee0f83",
   "lastOpenFiles": [
+    "design-pattern/strategy.md",
     "design-pattern/state.md",
-    "strategy.md",
     "README.md",
     "design-pattern/observer.md",
     "design-pattern/memento.md",
