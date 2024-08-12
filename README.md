@@ -53,5 +53,9 @@ Make a note of something, or try [the Importer](https://help.obsidian.md/Plugins
 
 [haproxy](https://pangorithm.github.io/MyAuxiliaryStorage/haproxy/haproxy)  
 
+[design-pattern](https://pangorithm.github.io/MyAuxiliaryStorage/design-pattern/design-pattern) 
+[OOP](https://pangorithm.github.io/MyAuxiliaryStorage/design-pattern/OOP) 
+
+
 
 

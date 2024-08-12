@@ -160,9 +160,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "2f12bfe5b7b6f24f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "design-pattern/OOP.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "78fbf9ef46522e98",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "design-pattern/OOP.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 12
+        "currentTab": 14
       }
     ],
     "direction": "vertical"
@@ -228,7 +252,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "design-pattern/OOP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -245,7 +269,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "design-pattern/OOP.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -268,7 +292,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "design-pattern/OOP.md"
               }
             }
           }
@@ -289,10 +313,13 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "93d43be3d64224f0",
+  "active": "78fbf9ef46522e98",
   "lastOpenFiles": [
-    "java/java.md",
     "README.md",
+    "design-pattern/design-pattern.md",
+    "design-pattern/OOP.md",
+    "design-pattern",
+    "java/java.md",
     "java/data-structure.md",
     "javaScript&typeScript/nestJS/Provier.md",
     "java",
@@ -319,8 +346,6 @@
     "image/nestjs-request-life-cycle.png",
     "image/nestjs-request-life-cycle.png.crdownload",
     "javaScript&typeScript/nestJS/Intercepter.md",
-    "javaScript&typeScript/nestJS/Interface.md",
-    "javaScript&typeScript/nestJS/Module.md",
     "image/galera-cluster-node-state.png",
     "image",
     "haproxy",
