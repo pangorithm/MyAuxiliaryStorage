@@ -335,14 +335,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "command.md",
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "031e780d19c2fe2c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "design-pattern/iterator.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 27
+        "currentTab": 28
       }
     ],
     "direction": "vertical"
@@ -408,7 +420,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "command.md",
+                "file": "design-pattern/iterator.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -425,7 +437,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "command.md",
+                "file": "design-pattern/iterator.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -448,7 +460,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "command.md"
+                "file": "design-pattern/iterator.md"
               }
             }
           }
@@ -469,10 +481,11 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "cead28f82e803bfb",
+  "active": "1e9257449eee0f83",
   "lastOpenFiles": [
     "README.md",
-    "command.md",
+    "design-pattern/iterator.md",
+    "design-pattern/command.md",
     "design-pattern/CoR.md",
     "design-pattern/proxy.md",
     "design-pattern/flyweight.md",
@@ -498,7 +511,6 @@
     "rust/module.md",
     "rust/ownership.md",
     "rust/기초문법.md",
-    "rust/rust.md",
     "rust",
     "image/nestjs-request-life-cycle.png",
     "image/nestjs-request-life-cycle.png.crdownload",
