@@ -220,9 +220,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "adad7073cc5f9356",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "design-pattern/prototype.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 17
+        "currentTab": 18
       }
     ],
     "direction": "vertical"
@@ -288,7 +300,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "design-pattern/builder.md",
+                "file": "design-pattern/prototype.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -305,7 +317,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "design-pattern/builder.md",
+                "file": "design-pattern/prototype.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -328,7 +340,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "design-pattern/builder.md"
+                "file": "design-pattern/prototype.md"
               }
             }
           }
@@ -349,13 +361,14 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "68ac5fd681d90c1e",
+  "active": "adad7073cc5f9356",
   "lastOpenFiles": [
+    "README.md",
+    "design-pattern/prototype.md",
+    "design-pattern/builder.md",
     "design-pattern/singleton.md",
     "design-pattern/factory-pattern.md",
     "design-pattern/design-pattern.md",
-    "design-pattern/builder.md",
-    "README.md",
     "design-pattern/OOP.md",
     "design-pattern",
     "java/java.md",
@@ -379,7 +392,6 @@
     "javaScript&typeScript/nestJS/Exception-Filter.md",
     "mariaDB/Technical-description.md",
     "markdown/markdown-cheat-sheet.md",
-    "mariaDB/Dual-master-replication&Multiple-master-slaves.md",
     "image/nestjs-request-life-cycle.png",
     "image/nestjs-request-life-cycle.png.crdownload",
     "image/galera-cluster-node-state.png",
