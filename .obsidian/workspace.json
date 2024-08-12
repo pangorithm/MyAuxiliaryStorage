@@ -97,14 +97,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "design-pattern/visitor.md",
+                "file": "PM2/PM2.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "59e9d625ab46ac94",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PM2/logging.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -170,7 +182,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "design-pattern/visitor.md",
+                "file": "PM2/logging.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +199,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "design-pattern/visitor.md",
+                "file": "PM2/logging.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +222,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "design-pattern/visitor.md"
+                "file": "PM2/logging.md"
               }
             }
           }
@@ -231,9 +243,11 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "3d6219f09aeb29ab",
+  "active": "59e9d625ab46ac94",
   "lastOpenFiles": [
     "README.md",
+    "PM2/logging.md",
+    "PM2/PM2.md",
     "design-pattern/visitor.md",
     "design-pattern/template-method.md",
     "design-pattern/strategy.md",
@@ -258,8 +272,6 @@
     "design-pattern/prototype.md",
     "design-pattern/singleton.md",
     "design-pattern",
-    "java/java.md",
-    "java/data-structure.md",
     "java",
     "rust",
     "image/nestjs-request-life-cycle.png",

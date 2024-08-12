@@ -46,6 +46,7 @@ Make a note of something, or try [the Importer](https://help.obsidian.md/Plugins
 [collection](https://pangorithm.github.io/MyAuxiliaryStorage/rust/collection)  
 
 [PM2](https://pangorithm.github.io/MyAuxiliaryStorage/PM2/PM2)  
+[logging](https://pangorithm.github.io/MyAuxiliaryStorage/PM2/logging)  
 
 [nginx](https://pangorithm.github.io/MyAuxiliaryStorage/nginx/nginx)  
 [command](https://pangorithm.github.io/MyAuxiliaryStorage/nginx/command)  
