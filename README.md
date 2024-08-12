@@ -65,6 +65,7 @@ Make a note of something, or try [the Importer](https://help.obsidian.md/Plugins
 [decorator](https://pangorithm.github.io/MyAuxiliaryStorage/design-pattern/decorator) 
 [facade](https://pangorithm.github.io/MyAuxiliaryStorage/design-pattern/facade) 
 [flyweight](https://pangorithm.github.io/MyAuxiliaryStorage/design-pattern/flyweight) 
+[proxy](https://pangorithm.github.io/MyAuxiliaryStorage/design-pattern/proxy) 
 
 
 

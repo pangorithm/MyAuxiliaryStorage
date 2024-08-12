@@ -299,14 +299,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "design-pattern/flyweight.md",
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f1624a08afe06109",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "design-pattern/proxy.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 24
+        "currentTab": 25
       }
     ],
     "direction": "vertical"
@@ -372,7 +384,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "design-pattern/flyweight.md",
+                "file": "design-pattern/proxy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -389,7 +401,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "design-pattern/flyweight.md",
+                "file": "design-pattern/proxy.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -412,7 +424,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "design-pattern/flyweight.md"
+                "file": "design-pattern/proxy.md"
               }
             }
           }
@@ -436,6 +448,7 @@
   "active": "1e9257449eee0f83",
   "lastOpenFiles": [
     "README.md",
+    "design-pattern/proxy.md",
     "design-pattern/flyweight.md",
     "design-pattern/facade.md",
     "design-pattern/adapter.md",
@@ -463,7 +476,6 @@
     "rust",
     "javaScript&typeScript/decorator.md",
     "javaScript&typeScript/nestJS/Test.md",
-    "javaScript&typeScript/nestJS/Pipe.md",
     "image/nestjs-request-life-cycle.png",
     "image/nestjs-request-life-cycle.png.crdownload",
     "image/galera-cluster-node-state.png",
