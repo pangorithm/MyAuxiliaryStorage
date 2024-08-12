@@ -196,9 +196,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "5d81920f27a490b7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 15
+        "currentTab": 16
       }
     ],
     "direction": "vertical"
@@ -325,11 +337,12 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "afd8b9183ad2a013",
+  "active": "1e9257449eee0f83",
   "lastOpenFiles": [
-    "factory-pattern.md",
-    "design-pattern/OOP.md",
+    "design-pattern/singleton.md",
     "README.md",
+    "design-pattern/factory-pattern.md",
+    "design-pattern/OOP.md",
     "design-pattern/design-pattern.md",
     "design-pattern",
     "java/java.md",
@@ -355,7 +368,6 @@
     "markdown/markdown-cheat-sheet.md",
     "mariaDB/Dual-master-replication&Multiple-master-slaves.md",
     "mariaDB/galera-cluster-light-summary.md",
-    "mariaDB/Galera-cluster-administration.md",
     "image/nestjs-request-life-cycle.png",
     "image/nestjs-request-life-cycle.png.crdownload",
     "image/galera-cluster-node-state.png",
