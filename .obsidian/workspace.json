@@ -4,119 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "fe2092be04eb2370",
+        "id": "bc195bf590241204",
         "type": "tabs",
         "children": [
           {
-            "id": "be51a944bd2a221c",
+            "id": "1e34d6530382ae14",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "691efa9578926b32",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "design-pattern/mediator.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3d6ab4c4729b9d8c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "37fb06a5fd30cd27",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "design-pattern/observer.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "dc57a79cece1a293",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "design-pattern/state.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b1624062c7677df4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4d81131636574ccf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "design-pattern/template-method.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3d6219f09aeb29ab",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PM2/PM2.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "59e9d625ab46ac94",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PM2/logging.md",
+                "file": "javaScript&typeScript/JS&TS.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 8
+        ]
       }
     ],
     "direction": "vertical"
@@ -182,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PM2/logging.md",
+                "file": "javaScript&typeScript/JS&TS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PM2/logging.md",
+                "file": "javaScript&typeScript/JS&TS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PM2/logging.md"
+                "file": "javaScript&typeScript/JS&TS.md"
               }
             }
           }
@@ -243,9 +146,16 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "59e9d625ab46ac94",
+  "active": "1e34d6530382ae14",
   "lastOpenFiles": [
+    "markdown/markdown-cheat-sheet.md",
+    "markdown/markdown.md",
+    "javaScript&typeScript/JS&TS.md",
+    "image/TypeScript-Interfaces.png",
+    "image/TypeScript-Classes.png",
     "README.md",
+    "image/TypeScript-Types.png",
+    "image/TypeScript-Control-Flow-Analysis.png",
     "PM2/logging.md",
     "PM2/PM2.md",
     "design-pattern/visitor.md",
@@ -268,9 +178,6 @@
     "design-pattern/decorator.md",
     "design-pattern/design-pattern.md",
     "design-pattern/factory-pattern.md",
-    "design-pattern/OOP.md",
-    "design-pattern/prototype.md",
-    "design-pattern/singleton.md",
     "design-pattern",
     "java",
     "rust",
