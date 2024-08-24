@@ -21,6 +21,7 @@ Make a note of something, or try [the Importer](https://help.obsidian.md/Plugins
 [Cluster-Monitoring](https://pangorithm.github.io/MyAuxiliaryStorage/mariaDB/Cluster-Monitoring)  
 
 [redis](https://pangorithm.github.io/MyAuxiliaryStorage/redis/redis)  
+[data-type](https://pangorithm.github.io/MyAuxiliaryStorage/redis/data-type)  
 
 [JS&TS](https://pangorithm.github.io/MyAuxiliaryStorage/javaScript&typeScript/JS&TS)  
 [nodeJS](https://pangorithm.github.io/MyAuxiliaryStorage/javaScript&typeScript/nestJS/nodeJS)  
