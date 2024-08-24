@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "b47b58bc848e4b75",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "redis/redis.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "javaScript&typeScript/JS&TS.md",
+                "file": "redis/redis.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "javaScript&typeScript/JS&TS.md",
+                "file": "redis/redis.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "javaScript&typeScript/JS&TS.md"
+                "file": "redis/redis.md"
               }
             }
           }
@@ -146,15 +159,17 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "1e34d6530382ae14",
+  "active": "b47b58bc848e4b75",
   "lastOpenFiles": [
-    "javaScript&typeScript/nestJS/nestJS.md",
+    "README.md",
+    "redis/redis.md",
     "javaScript&typeScript/JS&TS.md",
+    "redis",
+    "javaScript&typeScript/nestJS/nestJS.md",
     "markdown/markdown-cheat-sheet.md",
     "markdown/markdown.md",
     "image/TypeScript-Interfaces.png",
     "image/TypeScript-Classes.png",
-    "README.md",
     "image/TypeScript-Types.png",
     "image/TypeScript-Control-Flow-Analysis.png",
     "PM2/logging.md",
@@ -177,7 +192,6 @@
     "design-pattern/builder.md",
     "design-pattern/composite.md",
     "design-pattern/decorator.md",
-    "design-pattern/design-pattern.md",
     "design-pattern",
     "java",
     "rust",
