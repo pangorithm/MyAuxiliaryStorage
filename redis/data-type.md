@@ -45,10 +45,10 @@ GET key
 SET key value
 
 # 여러 개의 키값 가져오기
-MGET key1 key2 key3 ......
+MGET key1 [key2 key3 ......]
 
 # 여러 개의 키에 값을 저장하기
-MSET key1 value1 key2 value2 ......
+MSET key1 value1 [key2 value2 ......]
 
 # 키에 값 덮어쓰기(키가 존재하는 경우, 키값 끝에 인수 내용을 추가한다. 존재하지 않는 경우 인수를 값으로 하는 새로운 String형 키를 만든다.)
 APPEND key value
@@ -90,7 +90,7 @@ GETEX key
 GETDEL key
 
 # 여러 개의 키가 존재하지 않는 것을 확인하고 값을 저장하기
-MSETNX key1 value1 key2 value2 ......
+MSETNX key1 value1 [key2 value2 ......]
 
 
 ### 옵션 ###
@@ -117,3 +117,68 @@ EXPIRE key ttl
 ```
 
 
+## List
+String의 리스트 프로그래밍 언어의 리스트에 가깝다.
+* 특징
+  * 문자열 컬렉션으로 삽입 순서를 유지한다
+* 유즈케이스
+  * 스택, 큐
+  * 최신 데이터 캐싱
+  * 로그
+새로운 요소를 리스트 앞이나 뒤에 추가하는 동작은 상수 시간으로 완료되나 중간 부분으로 접근하는 것은 느리다.
+
+##### List 명령어
+```redis
+# 리스트 왼쪽부터 값을 가져오고 삭제하기 (6.2 이후는 갯수 지정 가능)
+LPOP ket [count]
+
+# 리스트 왼쪽부터 값을 삽입하기
+LPUSH key element [element ...]
+
+# 리스트의 오른쪽부터 값을 가져오고 삭제하기 (6.2 이후는 갯수 지정 가능)
+RPOP ket [count]
+
+# 리스트 오른쪽부터 값을 삽입하기
+RPUSH key element [element ...]
+
+# 리스트의 왼쪽 혹은 오른쪽부터 여러 개의 값을 가져오고 삭제하기(7.0 이상)
+LMPOP numkeys key [key ...] <LEFT | RIGHT> [COUNT count]
+
+# 블록 기능을 갖춘 LMPOP (7.0 이상) (리스트에 요소가 없으면 처리를 블록하고, 순서 집합에 요소가 추가될 때까지 처리를 대기한다. 단, 최대 대기 시간은 지정한 값으로 제한된다.)
+BLMPOP timeout numkeys key [key ...] <LEFT | RIGHT> [COUNT count]
+
+# 리스트에서 지정한 인덱스에 값을 조회하기
+LINDEX key index
+
+# 리스트에서 지정한 인덱스에 값을 삽입하기. 키로 지정한 리스트에 지정한 요소의 바로 앞 혹은 뒤에 같은 요소를 삽입한다. 찾을 수 없는 경우 수행되지 않는다.
+LINSERT key BEFORE|AFTER pivot element
+
+# 리스트의 길이 가져오기
+LLEN key
+
+# 리스트에서 지정한 범위의 인덱스에 있는 값 가져오기(끝부분 부터 가져오고 싶은 경우 음수 index 지정)
+LRANGE key start end
+
+# 리스트에서 지정한 요소를 지정한 수만큼 삭제하기
+LREM key count element
+
+# 리스트에서 지정한 인덱스에 있는 값을 지정한 값으로 저장하기
+LSET key index element
+
+# 지정한 범위 인덱스에 포함된 요소로 리스트 갱신하기
+LTRIM key start stop
+
+# 리스트 중 지정한 인덱스에 있는 값 가져오기(몇번째 일치 요소인지, 몇개의 인덱스를 반환할지, 최대 탐색 요소는 몇 개인지)
+LPOS key element [RANK rank] [COUNT num-matches] [MAXLEN len]
+
+# 리스트가 있는 경우에만 값을 삽입하기
+LPUSHX key element [element ...]
+RPUSHX key element [element ...]
+
+# 리스트 간 요소로 이동하기(6.2 이상)
+LMOVE source destination LEFT|RIGHT LEFT|RIGHT
+
+# 블록 기능을 갖춘 POP(리스트에 요소가 없는 경우 처리를 블록하고 리스트에 요소가 추가될 때까지 대기한다.)
+BLPOP key [key ...] timeout
+BRPOP key [key ...] timeout
+```
