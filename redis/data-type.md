@@ -182,3 +182,210 @@ LMOVE source destination LEFT|RIGHT LEFT|RIGHT
 BLPOP key [key ...] timeout
 BRPOP key [key ...] timeout
 ```
+
+## Hash
+* 특징
+  * 필드와 값의 쌍의 집합
+  * 필드와 연결된 값으로 구성된  맵. 필드와 값 모두 문자열이다.
+* 유스케이스
+  * 객체 표현
+
+##### Hash 명령어
+```redis
+# 키로 지정한 해시에서 지정한 필드를 삭제
+HDEL key field [field ......]
+
+# 키로 지정한 해시에 지정한 필드가 존재하면 1을 반환, 그렇지 않으면 0을 반환
+HEXISTS key field
+
+# 키로 지정한 해시에서 지정한 필드에 저장된 값을 반환
+HGET key field
+
+# 키로 지정한 해시에 포함된 모든 필드와 값 쌍을 반환
+HGETALL key
+
+# 해시에 포함된 필드 이름 무작위로 가져오기(옵션 지정시 값도 함께 가져온다)
+HRANDFIELD key [count [WITHVALUES]]
+
+# 해시에서 모든 필드 가져오기
+HKEYS key
+
+# 해시에 포함된 필드 수 가져오기
+HLEN key
+
+# 해시에 지정한 필드값 문자열의 길이 가져오기
+HSTRLEN key field
+
+# 해시에서 여러 필드와 값의 쌍 저장하기
+HMSET key field value [field value ...]
+
+# 해시에 지정한 필드값 저장하기
+HSET key field value [field value ...]
+
+# 해시에 필드가 존재하지 않는 것을 확인한 후 값 저장하기
+HSETNX key field value
+
+# 해시의 모든 필드값 가져오기
+HVALS key
+
+# 키로 지정한 해시의 필드 집합을 반복 처리하여 필드 이름과 저장된 값의 쌍 목록을 반환
+HSCAN key cursor [MATCH pattern] [COUNT count]
+
+
+### 값이 숫자인 경우에만 사용 가능한 명령어 ###
+
+# 해시에 지정한 필드 값을 지정한 정수만큼 증가(키가 존재 하지 않는 경우 동작 전에 0을 저장) 
+HINCRBY key field increment
+
+# 해시에 지정한 필드값을 지정한 부동소수점 수만큼 증가(키가 존재 하지 않는 경우 동작 전에 0을 저장)
+HINCREBYFLOAT key field increment
+```
+
+## Set
+* 특징
+  * 순서 없는 고유한 문자열 집합
+  * 대상 요소 포함 여부를 확인하거나, 집합 간 합집합, 차집합 등 작업을 통해 공통 요소 또는 차이점 추출이 가능하다.
+* 유즈케이스
+  * 멤버십
+  * 태그 관리
+
+##### Set 명령어
+```redis
+# 집합에 하나 이상의 멤버 추가하기
+SADD key member [member ...]
+
+# 집합에 포함된 멤버의 수 가져오기
+SCARD key
+
+# 집합에 지정한 멤버가 포함되었는지 판단하기
+SISMEMBER key member
+
+# 집합에 지정한 여러 멤버가 포함되어 있는지 판단하기
+SMISMEMBER key member [member ...]
+
+# 집합에 포함된 모든 멤버 가져오기
+SMEMBERS key
+
+# 집합에 포함된 멤버를 무작위로 가져오기
+SPOP key [count]
+
+# 멤버를 삭제하지 않고 무작위로 멤버 추출하기
+SRANDMEMBER key [count]
+
+# 집합에서 하나 이상의 멤버를 삭제하기
+SREM key member [member ...]
+
+# 키로 지정한 집합에 각 멤버를 반복 처리하여 멤버 목록을 반환한다.
+SSCAN key member [member ...]
+
+# 집합 간 멤버 이동하기
+SMOVE source destination member
+
+
+### Set에서 사용 가능한 집합 연산 명령어 ###
+
+# 하나 이상의 집합들의 차집합 가져오기
+SDIFF key [key ...]
+
+# 집합 간 차집합을 가져오고 저장하기
+SDIFFSTORE destination key [key ...]
+
+# 하나 이상의 집합들의 교집합 가져오기
+SINTER key [key ...]
+
+# 집합 간 교집합을 가져오고 저장하기
+SINTERSTORE destination key [key ...]
+
+# 하나 이상의 집합들의 교집합의 멤버 수를 반환
+SINTERCARD numkeys key [key ...] [LIMIT limit]
+
+# 하나 이상의 집합들의 합집합 가져오기
+SUNION key [key ...]
+
+# 집합 간의 합집합을 가져오고 저장하기
+SUNIONSTORE destination key [key ...]
+```
+
+## Sorted Set
+* 특징
+  * 순서가 있는 고유한 문자열 집합
+  * Set와 유사하지만 모든 요소에는 점수라는 부동소수점을 가진다. 요소는 항상 점수를 통해 정렬되며 Set와는 다른 특정 범위의 요소를 추출할 수 있다.
+* 유즈케이스
+  * 랭킹
+  * 활동 피드
+
+##### Sorted Set 명령어
+```redis
+# 순서 집합에 하나 이상의 점수와 멤버 쌍 추가하기(GT 옵션은 큰 값으로 갱신, LT 옵션은 작은 값으로 갱신한다.)
+ZADD key [NX | XX] [GT | LT] [CH] [INCR] score member [score member ...]
+
+# 순서 집합에 포함된 멤버 수 가져오기
+ZCARD key
+
+# 순서 집합에 지정한 멤버의 점수 순위를 오름차순으로 가져오기
+ZRANK key member
+
+# 순서 집합에 지정한 멤버의 점수 순위를 높은 순서대로 가져오기
+ZREVRANK key member
+
+# 순서 집합에 지정한 멤버의 점수 범위에 있는 멤버를 오름 차순으로 가져오기
+ZRANGE key min max [BYSCORE | BYLEX] [REV] [LIMIT offset count] [WITHSCORES]
+
+# 순서 집합에 지정한 멤버의 점수 범위에 있는 멤버 목록을 오른차순으로 가져오고 저장하기
+ZRANGESTORE dst src min max [BYSCORE | BYLEX] [REV] [LIMIT offset count]
+
+# 순서 집합에 지정한 멤버 삭제하기
+ZREM key member [member ...]
+
+# 순서 집합에서 지정한 점수 범위에 있는 멤버 수 가져오기
+ZCOUNT key min max
+
+# 순서 집합에서 점수가 최대인 멤버 삭제하고 가져오기
+ZPOPMAX key [count]
+
+# 순서 집합에서 점수가 최소인 멤버 삭제하고 가져오기
+ZPOPMIN key [count]
+
+# 순서 집합에서 지정한 멤버 점수 가져오기
+ZCORE key member
+
+# 순서 집합에서 여러 멤버 점수 가져오기
+ZMSCORE key member [member ...]
+
+# 순서 집합에서 반복 처리하여 멤버 목록 가져오기
+ZSCAN key cursor [MATCH pattern] [COUNT count]
+
+# 순서 집합에서 점수가 최대 혹은 최소인 여러 멤버를 삭제하고 가져오기
+ZMPOP numkeys key [key ...] <MIN|MAX> [COUNT count]
+
+# 블록 기능을 갖춘 ZMPOP(순서 집합에 요소가 없는 경우 요소가 추가될 때까지 처리를 대기한다.)
+BZMPOP timeout numkeys key [key ...] <MIN|MAX> [COUNT count]
+
+
+### Sorted Set에서 사용 가능한 집합 연산 명령어 ###
+### Set에서 사용 가능한 집합 연산 명령어에서 접두어만 Z로 바꾸면 된다 ###
+
+
+### 기타 명령어 ###
+
+# 순서 집합에서 지정한 사전 순 범위에 있는 멤버 모두 삭제하기
+ZREMRANGEBYLEX key min max
+
+# 순서 집합에서 지정한 순위의 범위에 있는 멤버 모두 삭제하기
+ZREMRANGEBYRANK key start stop
+
+# 순서 집합에서 지정한 점수 범위에 있는 멤버를 모두 삭제하기 
+ZREMRANGEBYSCORE key min max
+
+# 순서 집합에서 지정한 사전 순 범위에 있는 멤버 수 가져오기
+ZLEXCOUNT key [count [WITHSCORES]]
+
+# 순서 집합의 점수를 지정한 정수만큼 증가시키기
+ZINCRBY key increment member
+
+# 블록 기능을 갖춘 ZPOPMIN
+BZPOPMIN key [key ...] timeout
+
+# 블록 기능을 갖춘 ZPOPMAX
+BZPOPMAX key [key ...] timeout
+```
