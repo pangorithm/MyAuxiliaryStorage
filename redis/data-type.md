@@ -16,7 +16,7 @@
 데이터를 저장하고 가져올 때 기본적으로 데이터별 독립된 명령어를 사용한다.
 
 ### 레디스 유틸리티 명령어
-* `KEYS pattern` : 레디스에서 키 목록을 확인하고자 할 때 사용한다. 패턴에는 와일드카드`*` 를 사용할 수 있지만 CPU 사용여 영향을 주기 때문에 운용 중인 경우에는 사용하지 않는 것이 바람직하다. 
+* `KEYS pattern` : 레디스에서 키 목록을 확인하고자 할 때 사용한다. 패턴에는 와일드카드`*` 를 사용할 수 있지만 CPU 사용에에 영향을 주기 때문에 운용 중인 경우에는 사용하지 않는 것이 바람직하다. 
 * `SCAN`: 운영환경에서 키 목록 정보를 확인하고 싶을 때는 `SCAN/SSCAN/HSCAN/ZSCAN` 명령어와 같이 SCAN 계열 명령어의 사용을 권장한다.
 * `EXISTS`: 키 존재 여부를 확인할 때 사용하며 매칭된 갯수를 반환한다.
 * `TYPE`: 해당 키를 사용하는 자료형과 기능을 확인할 수 있다.
@@ -388,4 +388,47 @@ BZPOPMIN key [key ...] timeout
 
 # 블록 기능을 갖춘 ZPOPMAX
 BZPOPMAX key [key ...] timeout
+```
+
+## bitmap
+이 보조 자료형은 다섯가지 자료형 내부에서 모두 사용할 수 있다. 비트맵은 비트 배열이라고도 불리며 데이터 모델을 비트의 존재 여부나 그 위치에 따라 표현하여 메모리를 절약할 수 있다. 비트맵은 독립적인 자료형처럼 보이나 실제로는 String 형으로 정의되어 있으며, 비트 연산 등 특정 용도에 특화된 보조 자료형이다.
+
+* 특징
+  * 비트열 작업에 사용한다.
+  * 개별 비트를 설정 또는 초기화하거나 비트 수를 세거나 처음 0 또는 1로 저장된 비트 위치 검색, 연산 등을 처리할 수 있다.
+  * 비트맵을 여러 키로 분해하여 샤딩하기 용이하다.
+* 유즈케이스
+  * 모든 종류의 실시간 분석
+  * 객체 ID 관련 이진 정보 저장
+비트맵은 메모리 공간을 효율적으로 다루는 장점이 있으나, 처리하는 대상의 숫자가 적다면 희소 상태가 되기 때문에 메모리 공간 관리 측면에서 비효율적일 수 있다. 또한 기존 비트맵의 크기가 작은 상태에서 큰 오프셋으로 비트를 설정하는 경우, 비트맵에 메모리가 추가로 할당되어 확장되고, 나머지 부분은 0으로 채워진다. 이 과정에서 레디스 서버가 블록될 수도 있다.
+
+##### bitmap 명령어
+```redis
+# 지정한 오프셋의 비트값 가져오기
+GETBIT key offset
+
+# 지정한 오프셋의 비트값 설정하기
+SETBIT key offset value
+
+# 비트맵의 비트 수 가져오기
+BITCOUNT key [start end [BYTE | BIT]]
+
+# 지정한 비트의 처음 위치 가져오기
+BITPOS key bit [start [end [BYTE | BIT]]]
+
+# 여러 비트 필드 동시에 조작하기
+BITFIELD key GET encoding offset | [OVERFLOW WRAP | SAT | FAIL] SET encoding offset value | INCRBY encoding offset increment [GET encoding offset | [OVERFLOW WRAP | SAT | FAIL] SET encoding offset value | INCRBY encoding offset increment ...]
+# BITFIELD 하위 명령어
+GET type offset
+SET type offset value
+INCRBY type offset increment
+OVERFLOW [WRAP|SAT|FAIL]
+
+# 읽기 전용 BITFIELD 명령어
+BITFIELD_RO key GET type offset
+
+# 비트연산 명령어
+BITTOP [AND | OR | XOR | NOT]
+
+# 
 ```
