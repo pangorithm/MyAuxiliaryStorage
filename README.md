@@ -22,6 +22,7 @@ Make a note of something, or try [the Importer](https://help.obsidian.md/Plugins
 
 [redis](https://pangorithm.github.io/MyAuxiliaryStorage/redis/redis)  
 [data-type](https://pangorithm.github.io/MyAuxiliaryStorage/redis/data-type)  
+[feature](https://pangorithm.github.io/MyAuxiliaryStorage/redis/feature)  
 
 [JS&TS](https://pangorithm.github.io/MyAuxiliaryStorage/javaScript&typeScript/JS&TS)  
 [nodeJS](https://pangorithm.github.io/MyAuxiliaryStorage/javaScript&typeScript/nestJS/nodeJS)  

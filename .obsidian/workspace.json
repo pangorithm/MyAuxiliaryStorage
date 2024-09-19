@@ -37,14 +37,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "redis/data-type.md",
+                "file": "redis/redis.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ae45ca1d5259fc8c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "redis/feature.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "redis/data-type.md",
+                "file": "redis/feature.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "redis/data-type.md",
+                "file": "redis/feature.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "redis/data-type.md"
+                "file": "redis/feature.md"
               }
             }
           }
@@ -171,11 +183,12 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "4e47c212b3214388",
+  "active": "ae45ca1d5259fc8c",
   "lastOpenFiles": [
     "README.md",
-    "redis/data-type.md",
     "redis/redis.md",
+    "redis/feature.md",
+    "redis/data-type.md",
     "javaScript&typeScript/JS&TS.md",
     "redis",
     "javaScript&typeScript/nestJS/nestJS.md",
@@ -203,7 +216,6 @@
     "design-pattern/adapter.md",
     "design-pattern/bridge.md",
     "design-pattern/builder.md",
-    "design-pattern/composite.md",
     "design-pattern",
     "java",
     "rust",
