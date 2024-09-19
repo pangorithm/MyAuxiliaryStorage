@@ -429,6 +429,30 @@ BITFIELD_RO key GET type offset
 
 # 비트연산 명령어
 BITTOP [AND | OR | XOR | NOT]
+ 
+```
 
-# 
+
+## Geohash
+경도와 위도 두 개의 좌표를 하나의 문자열로 합친 것으로 그리드 내의 영역을 표시한다.
+
+##### Geohash 명령어
+```redis
+# 위치 정보 추가하기
+GEOADD key [NS|XX] [CH] longitude latitude member [longitude latitude member ...]
+
+# 위치 정보 Geohash 값 가져오기
+GEOHASH key member [member ...]
+
+# 경도 위도 값 가져오기
+GEOPOS key member [member ...]
+
+# 멤버 간 거리 가져오기(미터 단위)
+GEODIST key member1 member2 [M | KM | FT | MI]
+
+# 특정 경도 위도 지점에서 지정한 조건에 있는 멤버 목록 가져오기
+GEOSEARCH key FROMMEMBER member| FROMLONLAT logitude latitude BYRADIUS radius M | KM | FT | MI | MYBOX width height M | KM | FT | MI | [ASC | DESC] [COUNT count [ANY]] [WITHDIST] [WITHHASH]
+
+# 특정 경도 위도 지점에서 지정한 조건에 있는 멤버 목록 가져오고 저장하기
+GEOSEARCHSTORE destination source FROMMEMBER member | FROMLONLAT longitude latitude BYRADIUS M | KM | FT | MI | MYBOX width height M | KM | FT | MI | [ASC | DESC] [COUNT count [ANY]] [STOREDIST]
 ```
