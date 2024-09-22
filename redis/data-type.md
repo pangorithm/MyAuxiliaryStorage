@@ -456,3 +456,63 @@ GEOSEARCH key FROMMEMBER member| FROMLONLAT logitude latitude BYRADIUS radius M 
 # 특정 경도 위도 지점에서 지정한 조건에 있는 멤버 목록 가져오고 저장하기
 GEOSEARCHSTORE destination source FROMMEMBER member | FROMLONLAT longitude latitude BYRADIUS M | KM | FT | MI | MYBOX width height M | KM | FT | MI | [ASC | DESC] [COUNT count [ANY]] [STOREDIST]
 ```
+
+
+### 공통 명령어
+##### TTL 관련 명령어
+```redis
+# 하나 이상의 키 중에 존재하는 키의 수를 반환
+EXISTs key [key ...]
+
+# 키의 남은 TTL 값을 초 단위로 반환
+TTL key
+# 키의 남은 TTL 값을 밀리 초 단위로 반환
+PTTL key
+
+# 키의 TTL 초단위로 설정하기
+EXPIRE key seconds [NX | XX | GT | NT]
+# 키의 TTL 밀리 초단위로 설정하기
+PEXPIRE key milliseconds [NX | XX | GT | NT]
+# 키의 TTL 초단위로 유닉스 시간으로 설정하기
+EXPIREAT key timestamp [NX | XX | GT | NT]
+# 키의 TTL 밀리 초단위로 유닉스 시간으로 설정하기
+PEXPIREAT key milliseconds-timestamp [NX | XX | GT | NT]
+### 옵션 설명
+# NX: 키가 존재하지 않을때, XX: 키가 존재할때 TTL을 설정한다.
+# GT: 설정한 TTL이 더 클 경우, NT: 설정한 TTL이 더 작은 경우 TTL을 설정한다.
+
+# 키의 만료시간 초 단위로 확인하기
+EXPIRETIME key
+# 키의 만료시간 밀리 초 단위로 확인하기
+PEXPIRETIME key
+# 키에 지정한 TTL 삭제하기
+PERSIST key
+```
+##### 데이터 삭제 관련 명령어
+```redis
+# 키를 동기적으로 삭제하기
+DEL key [key ...]
+# 키를 비동기적으로 삭제하기
+UNLINK key [key ...]
+
+# 현재 데이터베이스 내 모든 키 삭제하기
+FLUSHDB: [ASYNC | SYNC]
+# 모든 데이터베이스 내 모든 키 삭제하기
+FLUSHALL [ASYNC | SYNC]
+```
+##### 범용 명령어
+```redis
+# 키 목록 가져오기
+KEYS pattern
+
+# 반복 처리하여 키 목록 가져오기
+SCAN cursor [MATCH pattern] [COUNT count] [TYPE type]
+
+# 현재 데이터베이스 내의 키 개수 가져오기
+DBSIZE
+
+# 지정한 기준으로 키 정렬하기
+SORT key [BY pattern] [LIMIT offset count] [GET pattern [GET pattern]] [ASC | DESC] [ALPHA] [STORE destination]
+# SORT 명령어의 읽기 전용 버전
+SORT_RO key [BY pattern] [LIMIT offset count] [GET pattern [GET pattern]] [ASC | DESC] [ALPHA]
+```

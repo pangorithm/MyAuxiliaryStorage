@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "redis/feature.md",
+                "file": "redis/data-type.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "redis/feature.md",
+                "file": "redis/data-type.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "redis/feature.md",
+                "file": "redis/data-type.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "redis/feature.md"
+                "file": "redis/data-type.md"
               }
             }
           }
@@ -185,9 +185,9 @@
   },
   "active": "ae45ca1d5259fc8c",
   "lastOpenFiles": [
+    "redis/feature.md",
     "README.md",
     "redis/redis.md",
-    "redis/feature.md",
     "redis/data-type.md",
     "javaScript&typeScript/JS&TS.md",
     "redis",
