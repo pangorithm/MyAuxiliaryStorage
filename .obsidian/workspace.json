@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "redis/data-type.md",
+                "file": "rust/concurrency.md",
                 "mode": "source",
                 "source": false
               }
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "redis/data-type.md",
+                "file": "rust/concurrency.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "redis/data-type.md",
+                "file": "rust/concurrency.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "redis/data-type.md"
+                "file": "rust/concurrency.md"
               }
             }
           }
@@ -185,10 +185,12 @@
   },
   "active": "ae45ca1d5259fc8c",
   "lastOpenFiles": [
-    "redis/feature.md",
+    "rust/collection.md",
+    "rust/concurrency.md",
     "README.md",
-    "redis/redis.md",
     "redis/data-type.md",
+    "redis/feature.md",
+    "redis/redis.md",
     "javaScript&typeScript/JS&TS.md",
     "redis",
     "javaScript&typeScript/nestJS/nestJS.md",
@@ -214,8 +216,6 @@
     "design-pattern/flyweight.md",
     "design-pattern/facade.md",
     "design-pattern/adapter.md",
-    "design-pattern/bridge.md",
-    "design-pattern/builder.md",
     "design-pattern",
     "java",
     "rust",
