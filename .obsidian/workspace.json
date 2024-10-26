@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "concurrency"
             }
+          },
+          {
+            "id": "cab8e6906ebe0c17",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "rust/io.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "io"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -93,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "rust/concurrency.md",
+                "file": "rust/io.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +118,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "concurrency의 백링크"
+              "title": "io의 백링크"
             }
           },
           {
@@ -112,12 +127,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "rust/concurrency.md",
+                "file": "rust/io.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "concurrency의 나가는 링크"
+              "title": "io의 나가는 링크"
             }
           },
           {
@@ -139,10 +154,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "rust/concurrency.md"
+                "file": "rust/io.md"
               },
               "icon": "lucide-list",
-              "title": "concurrency 개요"
+              "title": "io 개요"
             }
           }
         ]
@@ -162,13 +177,14 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "f6753cde607e44e4",
+  "active": "cab8e6906ebe0c17",
   "lastOpenFiles": [
+    "README.md",
+    "rust/io.md",
+    "rust/concurrency.md",
     "javaScript&typeScript/JS&TS.md",
     "redis/redis.md",
-    "rust/concurrency.md",
     "rust/collection.md",
-    "README.md",
     "redis/data-type.md",
     "redis/feature.md",
     "redis",
@@ -194,7 +210,6 @@
     "design-pattern/proxy.md",
     "design-pattern/flyweight.md",
     "design-pattern/facade.md",
-    "design-pattern/adapter.md",
     "design-pattern",
     "java",
     "rust",

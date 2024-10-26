@@ -49,6 +49,7 @@ Make a note of something, or try [the Importer](https://help.obsidian.md/Plugins
 [exception](https://pangorithm.github.io/MyAuxiliaryStorage/rust/exception)  
 [collection](https://pangorithm.github.io/MyAuxiliaryStorage/rust/collection)  
 [concurrency](https://pangorithm.github.io/MyAuxiliaryStorage/rust/concurrency)  
+[io](https://pangorithm.github.io/MyAuxiliaryStorage/rust/io)  
 
 [PM2](https://pangorithm.github.io/MyAuxiliaryStorage/PM2/PM2)  
 [logging](https://pangorithm.github.io/MyAuxiliaryStorage/PM2/logging)  
