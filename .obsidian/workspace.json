@@ -34,9 +34,23 @@
               "icon": "lucide-file",
               "title": "io"
             }
+          },
+          {
+            "id": "3ab1be7a071fe730",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "rust/networking.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "networking"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -108,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "rust/io.md",
+                "file": "rust/networking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +132,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "io의 백링크"
+              "title": "networking의 백링크"
             }
           },
           {
@@ -127,12 +141,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "rust/io.md",
+                "file": "rust/networking.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "io의 나가는 링크"
+              "title": "networking의 나가는 링크"
             }
           },
           {
@@ -154,10 +168,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "rust/io.md"
+                "file": "rust/networking.md"
               },
               "icon": "lucide-list",
-              "title": "io 개요"
+              "title": "networking 개요"
             }
           }
         ]
@@ -177,9 +191,10 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "cab8e6906ebe0c17",
+  "active": "3ab1be7a071fe730",
   "lastOpenFiles": [
     "README.md",
+    "rust/networking.md",
     "rust/io.md",
     "rust/concurrency.md",
     "javaScript&typeScript/JS&TS.md",
@@ -209,7 +224,6 @@
     "design-pattern/CoR.md",
     "design-pattern/proxy.md",
     "design-pattern/flyweight.md",
-    "design-pattern/facade.md",
     "design-pattern",
     "java",
     "rust",

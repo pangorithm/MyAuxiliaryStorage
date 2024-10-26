@@ -50,6 +50,7 @@ Make a note of something, or try [the Importer](https://help.obsidian.md/Plugins
 [collection](https://pangorithm.github.io/MyAuxiliaryStorage/rust/collection)  
 [concurrency](https://pangorithm.github.io/MyAuxiliaryStorage/rust/concurrency)  
 [io](https://pangorithm.github.io/MyAuxiliaryStorage/rust/io)  
+[networking](https://pangorithm.github.io/MyAuxiliaryStorage/rust/networking)  
 
 [PM2](https://pangorithm.github.io/MyAuxiliaryStorage/PM2/PM2)  
 [logging](https://pangorithm.github.io/MyAuxiliaryStorage/PM2/logging)  
