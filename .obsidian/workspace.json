@@ -4,53 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "3fc4049775188fa9",
+        "id": "707d5b6d253e9974",
         "type": "tabs",
         "children": [
           {
-            "id": "f6753cde607e44e4",
+            "id": "4be28708fad0ea1d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "rust/concurrency.md",
+                "file": "rust/library.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "concurrency"
-            }
-          },
-          {
-            "id": "cab8e6906ebe0c17",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "rust/io.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "io"
-            }
-          },
-          {
-            "id": "3ab1be7a071fe730",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "rust/networking.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "networking"
+              "title": "library"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -191,12 +162,15 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "3ab1be7a071fe730",
+  "active": "4be28708fad0ea1d",
   "lastOpenFiles": [
+    "rust/기초문법.md",
+    "rust/rust.md",
+    "rust/library.md",
     "README.md",
-    "rust/networking.md",
-    "rust/io.md",
     "rust/concurrency.md",
+    "rust/io.md",
+    "rust/networking.md",
     "javaScript&typeScript/JS&TS.md",
     "redis/redis.md",
     "rust/collection.md",
@@ -221,9 +195,6 @@
     "design-pattern/mediator.md",
     "design-pattern/iterator.md",
     "design-pattern/command.md",
-    "design-pattern/CoR.md",
-    "design-pattern/proxy.md",
-    "design-pattern/flyweight.md",
     "design-pattern",
     "java",
     "rust",
