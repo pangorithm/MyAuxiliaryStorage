@@ -53,6 +53,7 @@ Make a note of something, or try [the Importer](https://help.obsidian.md/Plugins
 [networking](https://pangorithm.github.io/MyAuxiliaryStorage/rust/networking)  
 [library](https://pangorithm.github.io/MyAuxiliaryStorage/rust/library)  
 [system-call](https://pangorithm.github.io/MyAuxiliaryStorage/rust/system-call)  
+[time](https://pangorithm.github.io/MyAuxiliaryStorage/rust/time)  
 
 [PM2](https://pangorithm.github.io/MyAuxiliaryStorage/PM2/PM2)  
 [logging](https://pangorithm.github.io/MyAuxiliaryStorage/PM2/logging)  
