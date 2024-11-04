@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "707d5b6d253e9974",
+        "id": "bda078b712d9a57e",
         "type": "tabs",
         "children": [
           {
-            "id": "efc7c810c4d5aeb9",
+            "id": "09ba40eaef8f647c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -162,8 +162,9 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "efc7c810c4d5aeb9",
+  "active": "09ba40eaef8f647c",
   "lastOpenFiles": [
+    "rust/기초문법.md",
     "rust/rust.md",
     "markdown/markdown-cheat-sheet.md",
     "markdown/markdown.md",
@@ -173,7 +174,6 @@
     "rust/exception.md",
     "rust/concurrency.md",
     "rust/collection.md",
-    "rust/기초문법.md",
     "rust/OOP.md",
     "README.md",
     "rust/time.md",
