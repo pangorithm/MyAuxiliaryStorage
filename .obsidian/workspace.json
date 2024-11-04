@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "rust/OOP.md",
+                "file": "rust/기초문법.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "OOP"
+              "title": "기초문법"
             }
           }
         ]
@@ -164,25 +164,27 @@
   },
   "active": "efc7c810c4d5aeb9",
   "lastOpenFiles": [
+    "rust/rust.md",
+    "markdown/markdown-cheat-sheet.md",
+    "markdown/markdown.md",
+    "rust/memory.md",
     "rust/library.md",
+    "rust/io.md",
+    "rust/exception.md",
+    "rust/concurrency.md",
+    "rust/collection.md",
+    "rust/기초문법.md",
     "rust/OOP.md",
     "README.md",
     "rust/time.md",
     "rust/system-call.md",
-    "rust/기초문법.md",
-    "rust/rust.md",
-    "rust/concurrency.md",
-    "rust/io.md",
     "rust/networking.md",
     "javaScript&typeScript/JS&TS.md",
     "redis/redis.md",
-    "rust/collection.md",
     "redis/data-type.md",
     "redis/feature.md",
     "redis",
     "javaScript&typeScript/nestJS/nestJS.md",
-    "markdown/markdown-cheat-sheet.md",
-    "markdown/markdown.md",
     "image/TypeScript-Interfaces.png",
     "image/TypeScript-Classes.png",
     "image/TypeScript-Types.png",
@@ -193,8 +195,6 @@
     "design-pattern/template-method.md",
     "design-pattern/strategy.md",
     "design-pattern/state.md",
-    "design-pattern/observer.md",
-    "design-pattern/memento.md",
     "design-pattern",
     "java",
     "rust",
