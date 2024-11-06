@@ -56,6 +56,8 @@ Make a note of something, or try [the Importer](https://help.obsidian.md/Plugins
 [time](https://pangorithm.github.io/MyAuxiliaryStorage/rust/time)  
 [OOP](https://pangorithm.github.io/MyAuxiliaryStorage/rust/OOP)  
 
+[goLang](https://pangorithm.github.io/MyAuxiliaryStorage/goLang/go)  
+
 [PM2](https://pangorithm.github.io/MyAuxiliaryStorage/PM2/PM2)  
 [logging](https://pangorithm.github.io/MyAuxiliaryStorage/PM2/logging)  
 
