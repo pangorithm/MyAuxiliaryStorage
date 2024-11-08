@@ -2,7 +2,7 @@
 ```bash
 wget https://go.dev/dl/go1.23.2.linux-amd64.tar.gz
 # 또는 
-curl -O https://go.dev/dl/go1.23.2.linux-amd64.tar.gz
+curl -L -O https://go.dev/dl/go1.23.2.linux-amd64.tar.gz
 
 # go 바이너리 파일 설치
 rm -rf /usr/local/go && tar -C /usr/local -xzf go1.23.2.linux-amd64.tar.gz
