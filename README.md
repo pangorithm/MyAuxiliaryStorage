@@ -55,6 +55,7 @@ Make a note of something, or try [the Importer](https://help.obsidian.md/Plugins
 [system-call](https://pangorithm.github.io/MyAuxiliaryStorage/rust/system-call)  
 [time](https://pangorithm.github.io/MyAuxiliaryStorage/rust/time)  
 [OOP](https://pangorithm.github.io/MyAuxiliaryStorage/rust/OOP)  
+[wrapper](https://pangorithm.github.io/MyAuxiliaryStorage/rust/wrapper)  
 
 [goLang](https://pangorithm.github.io/MyAuxiliaryStorage/goLang/go)  
 
