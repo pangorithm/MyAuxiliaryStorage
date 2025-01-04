@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "255f9ce4699ddeea",
+        "id": "b2d4a384746b55d2",
         "type": "tabs",
         "children": [
           {
-            "id": "ff831e975a392893",
+            "id": "4b6247263d8b099f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "rust/기초문법.md",
+                "file": "network/routing.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "기초문법"
-            }
-          },
-          {
-            "id": "73912aa16fb12a44",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "rust/wrapper.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "wrapper"
+              "title": "routing"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -177,11 +162,14 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "73912aa16fb12a44",
+  "active": "4b6247263d8b099f",
   "lastOpenFiles": [
     "README.md",
-    "rust/wrapper.md",
+    "network/network.md",
+    "network/routing.md",
+    "network",
     "rust/기초문법.md",
+    "rust/wrapper.md",
     "goLang/go.md",
     "image/go-cheat-sheet.webp",
     "image/go-cheat-sheet.webp.crdownload",
@@ -211,8 +199,6 @@
     "image/TypeScript-Types.png",
     "image/TypeScript-Control-Flow-Analysis.png",
     "PM2/logging.md",
-    "PM2/PM2.md",
-    "design-pattern/visitor.md",
     "design-pattern",
     "java",
     "rust",
@@ -221,7 +207,6 @@
     "image/galera-cluster-node-state.png",
     "image",
     "haproxy",
-    "nginx",
     "무제 파일.canvas",
     "무제 파일 1.canvas"
   ]

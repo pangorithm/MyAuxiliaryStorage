@@ -6,6 +6,9 @@ Make a note of something, or try [the Importer](https://help.obsidian.md/Plugins
 [markdown](https://pangorithm.github.io/MyAuxiliaryStorage/markdown/markdown)  
 [markdown-cheat-sheet](https://pangorithm.github.io/MyAuxiliaryStorage/markdown/markdown-cheat-sheet)  
 
+[network](https://pangorithm.github.io/MyAuxiliaryStorage/network/network)
+[routing](https://pangorithm.github.io/MyAuxiliaryStorage/linux/routing)
+
 [mariaDB](https://pangorithm.github.io/MyAuxiliaryStorage/mariaDB/mariaDB)  
 [performance-analysis](https://pangorithm.github.io/MyAuxiliaryStorage/mariaDB/performance-analysis)  
 [performance-optimization](https://pangorithm.github.io/MyAuxiliaryStorage/mariaDB/performance-optimization)  
