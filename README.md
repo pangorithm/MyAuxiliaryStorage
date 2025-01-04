@@ -72,6 +72,8 @@ Make a note of something, or try [the Importer](https://help.obsidian.md/Plugins
 
 [haproxy](https://pangorithm.github.io/MyAuxiliaryStorage/haproxy/haproxy)  
 
+[consul](https://pangorithm.github.io/MyAuxiliaryStorage/consul/consul)  
+
 [design-pattern](https://pangorithm.github.io/MyAuxiliaryStorage/design-pattern/design-pattern) 
 [OOP](https://pangorithm.github.io/MyAuxiliaryStorage/design-pattern/OOP) 
 [factory-pattern](https://pangorithm.github.io/MyAuxiliaryStorage/design-pattern/factory-pattern) 
