@@ -22,6 +22,7 @@ Make a note of something, or try [the Importer](https://help.obsidian.md/Plugins
 [Spider-engine](https://pangorithm.github.io/MyAuxiliaryStorage/mariaDB/Spider-engine)  
 [Galera-cluster-administration](https://pangorithm.github.io/MyAuxiliaryStorage/mariaDB/Galera-cluster-administration)  
 [Cluster-Monitoring](https://pangorithm.github.io/MyAuxiliaryStorage/mariaDB/Cluster-Monitoring)  
+[galera-physical-restore](https://pangorithm.github.io/MyAuxiliaryStorage/mariaDB/galera-physical-restore)
 
 [redis](https://pangorithm.github.io/MyAuxiliaryStorage/redis/redis)  
 [data-type](https://pangorithm.github.io/MyAuxiliaryStorage/redis/data-type)  
