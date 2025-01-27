@@ -45,6 +45,9 @@ Make a note of something, or try [the Importer](https://help.obsidian.md/Plugins
 [java](https://pangorithm.github.io/MyAuxiliaryStorage/java/java)  
 [data-structure](https://pangorithm.github.io/MyAuxiliaryStorage/java/data-structure)  
 
+[dart](https://pangorithm.github.io/MyAuxiliaryStorage/dart/dart)  
+[기초문법](https://pangorithm.github.io/MyAuxiliaryStorage/dart/기초문법)  
+
 [rust](https://pangorithm.github.io/MyAuxiliaryStorage/rust/rust)  
 [기초문법](https://pangorithm.github.io/MyAuxiliaryStorage/rust/기초문법)  
 [ownership](https://pangorithm.github.io/MyAuxiliaryStorage/rust/ownership)  
