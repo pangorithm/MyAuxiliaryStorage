@@ -58,4 +58,28 @@ Options:
   -V, --version     Print version
 ```
 
-앱 빌드(apk 생성)를 하기 위해서는 npm run tauri android build 후에 안드로이드 스튜디오에서 generate signed app 를 진행해야 한다
+##### 안드로이드 빌드
+공식문서) https://v2.tauri.app/distribute/sign/android/
+앱 빌드(apk 생성)를 하기 위해서는 npm run tauri android build 후에 안드로이드 스튜디오에서 generate signed app 통해 서명 파일을 생성하고 
+build.gradle.kts 파일의 android 블럭 안에 아래 내용을 추가해서 서명을 추가한 후에 재빌드 해야 한다.
+```
+android {
+    ...
+    signingConfigs {
+        create("release") {
+            storeFile = file("path/to/your/keystore/file.jks") // keystore 파일 경로
+            storePassword = "yourKeystorePassword" // keystore 비밀번호
+            keyAlias = "yourKeyAlias" // 키 alias
+            keyPassword = "yourKeyPassword" // 키 비밀번호
+        }
+    }
+
+    buildTypes {
+        getByName("release") {
+            isMinifyEnabled = true // 릴리즈 빌드에서 ProGuard 설정 (옵션)
+            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            signingConfig = signingConfigs.getByName("release") // 서명 설정
+        }
+    }
+}
+```
