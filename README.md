@@ -64,6 +64,8 @@ Make a note of something, or try [the Importer](https://help.obsidian.md/Plugins
 [OOP](https://pangorithm.github.io/MyAuxiliaryStorage/rust/OOP)  
 [wrapper](https://pangorithm.github.io/MyAuxiliaryStorage/rust/wrapper)  
 
+[tauri](https://pangorithm.github.io/MyAuxiliaryStorage/tauri/tauri)  
+
 [goLang](https://pangorithm.github.io/MyAuxiliaryStorage/goLang/go)  
 
 [PM2](https://pangorithm.github.io/MyAuxiliaryStorage/PM2/PM2)  
