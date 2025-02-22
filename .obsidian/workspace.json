@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "rust/cmp.md",
+                "file": "rust/기초문법.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "cmp"
+              "title": "기초문법"
             }
           },
           {
@@ -179,9 +179,9 @@
   },
   "active": "1446ecc8e8889e8d",
   "lastOpenFiles": [
+    "rust/cmp.md",
     "rust/collection.md",
     "README.md",
-    "rust/cmp.md",
     "dart/기초문법.md",
     "rust/rust.md",
     "tauri/tauri.md",
