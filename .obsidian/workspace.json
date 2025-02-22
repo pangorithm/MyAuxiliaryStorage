@@ -41,16 +41,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tauri/tauri.md",
+                "file": "rust/rust.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "tauri"
+              "title": "rust"
+            }
+          },
+          {
+            "id": "85b09b7c8e969361",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.4"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -69,7 +81,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "파일 탐색기"
@@ -183,18 +196,18 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:퀵 스위처 열기": false,
+      "switcher:빠른 전환기 열기": false,
+      "daily-notes:오늘의 일일 노트 열기": false,
       "graph:그래프 뷰 열기": false,
       "canvas:새 캔버스 만들기": false,
-      "daily-notes:오늘의 데일리 노트 열기": false,
       "templates:템플릿 삽입": false,
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "2e9129fbabb6eab7",
+  "active": "85b09b7c8e969361",
   "lastOpenFiles": [
-    "README.md",
     "tauri/tauri.md",
+    "README.md",
     "dart/기초문법.md",
     "tauri",
     "dart/dart.md",
