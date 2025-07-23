@@ -104,6 +104,8 @@ Make a note of something, or try [the Importer](https://help.obsidian.md/Plugins
 [template-method](https://pangorithm.github.io/MyAuxiliaryStorage/design-pattern/template-method)   
 [visitor](https://pangorithm.github.io/MyAuxiliaryStorage/design-pattern/visitor)   
 
+[NATS-config](https://pangorithm.github.io/MyAuxiliaryStorage/NATS/Configuring%20NATS%20Server)
+
 
 
 
