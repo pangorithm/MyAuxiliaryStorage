@@ -37,6 +37,21 @@ JSON과 YAML의 장점을 결합한 conf 파일을 사용한다.
 ##### 상세 설정 참조
 https://docs.nats.io/running-a-nats-service/configuration
 
+## 주요 설정  
+
+### 클러스터 구성
+```
+cluster {
+  name: "nats-cluster"
+  listen: 0.0.0.0:6222
+
+  routes = [
+    nats://nats1.internal:6222,
+    nats://nats2.internal:6222
+  ]
+}
+```
+
 ### JetStream 리소스 제한 설정
 * JetStream 리소스는 글로벌 또는 계정별로 제한하여 관리 할 수 있다.
 
@@ -57,6 +72,72 @@ accounts {
         }
     }
 }
+```
+
+### 웹 소켓 설정
+```
+websocket {
+  listen: 0.0.0.0:9222
+  no_tls: true
+  same_origin: false
+}
+```
+
+### TLS 설정
+```
+tls {
+  cert_file: "./certs/server-cert.pem"
+  key_file: "./certs/server-key.pem"
+  ca_file: "./certs/ca.pem"
+  verify: true
+  timeout: 2
+}
+```
+
+### Leafnode 설정
+```
+leafnodes {
+  listen: "0.0.0.0:7422"
+  remotes = [
+    {
+      url: "tls://hub.example.com:7422"
+      credentials: "./leaf.creds"
+    }
+  ]
+}
+```
+
+### logging 설정
+```
+debug: true
+trace: false
+logtime: true
+log_file: "/var/log/nats-server.log"
+```
+
+### 시스템 계정 및 사용자 정의 설정
+```
+system_account: "SYS"
+
+accounts {
+  SYS: {
+    users: [
+      { user: "sys", password: "changeme" }
+    ]
+  }
+
+  myapp: {
+    users: [
+      { user: "app", password: "changeme" }
+    ]
+  }
+}
+```
+
+### Rate Limit / Connection 제한 설정
+```
+max_connections: 1000
+max_payload: 1048576  # 1MB
 ```
 
 ### NATS 서버 클러스터링
