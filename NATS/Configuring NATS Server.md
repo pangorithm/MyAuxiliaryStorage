@@ -27,7 +27,7 @@ https://docs.nats.io/running-a-nats-service/configuration
 
 ### JetStream 리소스 제한 설정
 * JetStream 리소스는 글로벌 또는 계정별로 제한하여 관리 할 수 있다.
-*```
+
 ```
 jetstream {
     store_dir: /data/jetstream
