@@ -106,6 +106,11 @@ Make a note of something, or try [the Importer](https://help.obsidian.md/Plugins
 
 [NATS-config](https://pangorithm.github.io/MyAuxiliaryStorage/NATS/Configuring%20NATS%20Server)
 
+[k3s](https://pangorithm.github.io/MyAuxiliaryStorage/k3s/install)
+
+[vault](https://pangorithm.github.io/MyAuxiliaryStorage/vault/init)
+
+
 
 
 
