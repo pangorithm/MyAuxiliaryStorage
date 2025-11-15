@@ -109,6 +109,11 @@ Make a note of something, or try [the Importer](https://help.obsidian.md/Plugins
 [k3s](https://pangorithm.github.io/MyAuxiliaryStorage/k3s/install)
 
 [vault](https://pangorithm.github.io/MyAuxiliaryStorage/vault/init)
+[static-management](https://pangorithm.github.io/MyAuxiliaryStorage/vault/static-management)
+[dynamic-management](https://pangorithm.github.io/MyAuxiliaryStorage/vault/dynamic-management)
+[approle](https://pangorithm.github.io/MyAuxiliaryStorage/vault/approle)
+[curl](https://pangorithm.github.io/MyAuxiliaryStorage/vault/curl)
+[agent](https://pangorithm.github.io/MyAuxiliaryStorage/vault/agent)
 
 
 
